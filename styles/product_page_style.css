@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,14 +6,12 @@ body{
 
 
 
-.display-flex
-{
+.display-flex {
     display: flex;
     justify-content: space-between;
 }
 
-.product-section
-{
+.product-section {
     border: 1px solid black;
 }
 
@@ -23,9 +21,10 @@ body{
     overflow: scroll;
     overflow-x: hidden;
     text-overflow: clip;
-    
+
 
 }
+
 .right-section {
     border: 1px solid black;
     width: 85%;
@@ -33,7 +32,7 @@ body{
 
 }
 
-.right-top-section div img{
+.right-top-section div img {
     width: 90%;
     /* position: relative; */
     margin-top: -30px;
@@ -41,14 +40,13 @@ body{
 
 }
 
-.display-width-90
-{
+.display-width-90 {
     /* border: 1px solid black; */
-    width:92%;
-    position: relative; 
- }
+    width: 92%;
+    position: relative;
+}
 
-.display-width-90 div{
+.display-width-90 div {
 
     display: inline-block;
     margin: auto;
@@ -56,27 +54,23 @@ body{
     margin-top: -40px;
 }
 
-.border-bottom
-{
+.border-bottom {
     border-bottom: 1px solid rgb(163, 159, 159);
     /* margin-top: 10px; */
     padding: 15px 0px 15px 2px;
     font-size: 16px;
 }
 
-.border-bottom div 
-{
+.border-bottom div {
     font-weight: 600;
 }
 
-.text-align-center
-{
+.text-align-center {
     text-align: center;
     margin-top: 10px;
 }
 
-.heading-right-section
-{
+.heading-right-section {
     border: 1px solid black;
     display: flex;
     height: 50px;
@@ -87,21 +81,18 @@ body{
 
 
 
-.underline
-{
-    border-bottom: 1px solid  black ;
+.underline {
+    border-bottom: 1px solid black;
     cursor: pointer;
 
 }
 
-.underline :hover
-{
+.underline :hover {
     border-bottom: 2px solid black;
 }
 
 
-.right-bottom-section-upper
-{
+.right-bottom-section-upper {
     /* border: 1px solid black; */
     width: 90%;
     margin: auto;
@@ -110,23 +101,21 @@ body{
 
 }
 
-.right-bottom-section-upper-first-p
-{
-border-bottom: 2px solid black;
+.right-bottom-section-upper-first-p {
+    border-bottom: 2px solid black;
 }
 
-.right-bottom-section-upper span{
+.right-bottom-section-upper span {
     font-weight: 600;
 }
 
-.right-bottom-section-upper div p 
-{
+.right-bottom-section-upper div p {
     /* border-bottom: 3px solid black; */
     height: 66%;
     cursor: pointer;
 }
 
-.right-bottom-section-upper div p:hover{
+.right-bottom-section-upper div p:hover {
     border-bottom: 2px solid black;
 
 }
