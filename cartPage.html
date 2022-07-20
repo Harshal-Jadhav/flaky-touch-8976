@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/cartPage.css">
+    <title>Cart Page</title>
+</head>
+
+<body>
+    <!-- TODO NAVBAR DIV TO BE ADDED HERE -->
+    <!-- <div id="navbar"></div> -->
+
+    <!-- ?Cart Page Starts -->
+
+    <div id="main">
+
+        <!-- *Shoping bag and Saved for later Buttons Start -->
+
+        <div id="sbsl">
+            <div>Shoping Bag (1)</div>
+            <div>Saved For Later (1)</div>
+        </div>
+
+        <!-- *Shoping bag and Saved for later Buttons End -->
+
+        <!-- *Shoping Bag Div Start -->
+
+        <div id="shopingBag">
+
+            <div>
+                <p>Shopping Bag</p>
+                <p>Items in your bag are not on hold.</p>
+            </div>
+
+            <!-- *Main append & side bar section start -->
+
+            <div id="masbs">
+
+                <!-- *Cart Secction Start -->
+
+                <div id="cartmain">
+                    <div>
+                        <span class="fa fa-gift"></span>
+                        <p>Choose gift options when you checkout</p>
+                    </div>
+                    <div>
+                        <div>
+                            <span class="material-symbols-outlined truck">
+                                local_shipping
+                            </span>
+                        </div>
+                        <div>
+                            <p>Delivery (3 items) to India</p>
+                            <p>International Shipping</p>
+                        </div>
+                    </div>
+                    <!-- !Div Where all cart items will append -->
+                    <div>
+                        <ul id="cart">
+                            <li class="product">
+                                <br>
+                                <hr><br>
+                                <div class="pd1">
+                                    <div>
+                                        <img src="https://n.nordstrommedia.com/id/sr3/062bf780-4178-41f7-bdb5-f3891bdad90a.jpeg?h=365&w=240&dpr=2"
+                                            alt="">
+                                    </div>
+                                    <!--img div -->
+                                    <div id="pd1d2">
+                                        <!-- Rest div -->
+                                        <div id="productDetails">
+                                            <div>
+                                                <p>Zeela</p>
+                                                <p>Live-In Pocket Shorts</p><br>
+                                                <p>Size: Small</p>
+                                                <p>Color: Black</p>
+                                            </div>
+                                            <div>
+                                                <p class="block"><span class="material-symbols-outlined">block</span>
+                                                    Not Available for PickUp</p>
+                                                <div>
+                                                    <div id="delivery">
+                                                        <input type="radio" name="deliv" id="deliv" checked>
+                                                        <p>Delivery</p>
+                                                    </div>
+                                                    <p>International orders usually arrive within 5-13
+                                                        business days.We'll give you delivery dates in
+                                                        checkout.</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>$110.70 <span>($36.90 each)</span></p>
+                                            </div>
+                                        </div>
+                                        <div id="quantity">Qty
+                                            <select name="qty" id="qty">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>
+                                        </div>
+                                        <div id="cardButtons">
+                                            <button class="remove">Remove</button>
+                                            <button class="saveForLater">Save for later</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- !All Appending will Finish here -->
+                    <div id="pst">
+                        <div id="pay">
+                            <p>Accepted Payment Methods</p>
+                            <div>
+                                <img src="./Assets/acceptedPaymentMethods.png" alt="">
+                            </div>
+                            <p>Need help? Call 1.888.282.6060 or <span class="blue">chat with us</span></p>
+                            <p class="blue">Shipping Internationaly?</p>
+                        </div>
+                        <div id="sub">
+                            <div>
+                                <p>Subtotal</p>
+                                <p id="total">$253</p>
+                            </div>
+                            <button id="checkout">Check Out</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- *Cart Section End -->
+                <hr>
+                <!-- *Sidebar Sectin Start -->
+
+                <div id="sidebar">
+                    <h4>People also Viewed</h4>
+                    <div class="sideProduct">
+                        <div>
+                            <img src="https://n.nordstrommedia.com/id/sr3/ab74bfc8-6423-4f6b-8994-f5ba30e32c20.jpeg?q=45&dpr=2&h=135.8&w=88"
+                                alt="">
+                        </div>
+                        <div>
+                            <p>Zeela</p>
+                            <p>Sale: INR 2,770.28</p>
+                            <p>After Sale: INR 7,441</p>
+                            <div id="star">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p>Medium Size available</p>
+                        </div>
+                    </div>
+                    <div class="sideProduct">
+                        <div>
+                            <img src="https://n.nordstrommedia.com/id/sr3/0229ed7e-e555-4369-adc2-4fc69e49c6dd.jpeg?q=45&dpr=2&h=135.8&w=88"
+                                alt="">
+                        </div>
+                        <div>
+                            <p>Zeela</p>
+                            <p>Sale: INR 2,770.28</p>
+                            <p>After Sale: INR 7,441</p>
+                            <div id="star">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p>Medium Size available</p>
+                        </div>
+                    </div>
+                    <div class="sideProduct">
+                        <div>
+                            <img src="https://n.nordstrommedia.com/id/sr3/7b45fbe3-2e4f-4ca8-9d93-9b4f8afc8ae7.jpeg?q=45&dpr=2&h=135.8&w=88"
+                                alt="">
+                        </div>
+                        <div>
+                            <p>Zeela</p>
+                            <p>Sale: INR 2,770.28</p>
+                            <p>After Sale: INR 7,441</p>
+                            <div id="star">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p>Medium Size available</p>
+                        </div>
+                    </div>
+                    <div class="sideProduct">
+                        <div>
+                            <img src="https://n.nordstrommedia.com/id/sr3/a1609b34-5da1-40bc-8edd-48e3eeb252e8.jpeg?q=45&dpr=2&h=135.8&w=88"
+                                alt="">
+                        </div>
+                        <div>
+                            <p>Zeela</p>
+                            <p>Sale: INR 2,770.28</p>
+                            <p>After Sale: INR 7,441</p>
+                            <div id="star">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p>Medium Size available</p>
+                        </div>
+                    </div>
+                    <div class="sideProduct">
+                        <div>
+                            <img src="https://n.nordstrommedia.com/id/sr3/d8a30cba-96d1-45cf-98d8-8695c71091a3.jpeg?q=45&dpr=2&h=135.8&w=88"
+                                alt="">
+                        </div>
+                        <div>
+                            <p>Zeela</p>
+                            <p>Sale: INR 2,770.28</p>
+                            <p>After Sale: INR 7,441</p>
+                            <div id="star">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <p>Medium Size available</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- *sidebar Section End -->
+            </div>
+
+            <!-- *Main append & side bar section end -->
+        </div>
+
+        <!-- *Shoping Bag div End -->
+    </div>
+
+    <!-- ?Cart Page End -->
+</body>
+
+</html>
