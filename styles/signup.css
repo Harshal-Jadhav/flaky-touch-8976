@@ -1,0 +1,121 @@
+#signUp{
+    width: 50%;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#signUp>h2{
+    font-family:sans-serif;
+    font-weight: lighter;
+    margin-left: 100px;
+}
+.checkout-s{
+    display: flex;
+    width: 20%;
+    /* border: 1px solid black; */
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+.checkout-s-img{
+    width: 15%;
+    /* border: 1px solid black; */
+}
+.checkout-s-img>img{
+    width: 100%;
+}
+.checkout-s-t{
+    margin-left: 10px;
+}
+.checkout-s-t>p{
+    font-size: 14px;
+}
+.order-s{
+    display: flex;
+    width: 25%;
+    /* border: 1px solid black; */
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 5px; */
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+.order-s-img{
+    width: 25%;
+    /* border: 1px solid black; */
+    margin-left: -15px;
+}
+.order-s-img>img{
+    width: 100%;
+}
+.order-s-t{
+    margin-left: 10px;
+}
+.order-s-t>p{
+    font-size: 14px;
+}
+.brand-s{
+    display: flex;
+    width: 40%;
+    /* border: 1px solid black; */
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 5px; */
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+.brand-s-img{
+    width: 15%;
+    /* border: 1px solid black; */
+    margin-left: -45px;
+}
+.brand-s-img>img{
+    width: 70%;
+}
+.brand-s-t{
+    margin-left: 5px;
+}
+.brand-s-t>p{
+    font-size: 14px;
+}
+form{
+    width: 55%;
+    /* border: 1px solid black; */
+    margin-left: 90px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+form>input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius:5px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+}
+#s-d{
+ /* border: 1px solid black; */
+ display: flex;
+ gap: 10px;
+ margin-top: -15px;
+}
+
+form>input[type=submit]{
+    background-color:black;
+    color: white;
+}
+form>input[type=submit]:hover{
+    background-color: rgb(119, 119, 119);
+}
+#s-d a{
+    color: black;
+}
+#s-d+p>a{
+    color: black;
+}
