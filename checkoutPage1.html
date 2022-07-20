@@ -5,11 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
+    <link rel="stylesheet" href="./styles/checkoutPage1.css">
     <title>Check Out Page</title>
 </head>
 
 <body>
-    
+    <div id="main">
+        <div id="details">
+            <div>
+                <h1>
+                    <span class="material-symbols-outlined">lock</span>
+                    Secure Checkout
+                    <small>Powered by Borderfree</small>
+                </h1>
+            </div>
+            <br><hr><br>
+            <div id="inputContainer">
+                <div><span id="part1">1</span> Delivery</div>
+            </div>
+            <form id="inputForm">
+                <input type="email" name="email" id="email" placeholder="Email"><br><br>
+                <div>
+                    <input type="text" name="fname" id="fname" placeholder="First Name">
+                    <input type="text" name="lname" id="lname" placeholder="Last Name">
+                </div><br>
+                <input type="text" name="address" id="address" placeholder="Address"><br><br>
+                <div>
+                    <input type="text" name="address2" id="address2" placeholder="Address 2 (Optional)">
+                    <input type="number" name="postalCode" id="postalCode" placeholder="Postal Code">
+                    <input type="text" name="city" id="city" placeholder="City">
+                    <input type="text" name="region" id="region" placeholder="Region (Optional)">
+                    <input type="number" name="phone" id="phone" placeholder="Phone Number">
+                    <input type="text" name="location" id="location" placeholder="Location">
+                </div>
+            </form>
+        </div>
+        <div id="order"></div>
+    </div>
 </body>
 
 </html>
