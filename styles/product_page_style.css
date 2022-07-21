@@ -1,7 +1,12 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
+}
+
+#main-container
+{
+    padding: 10px;
 }
 
 
@@ -11,22 +16,79 @@ body {
     justify-content: space-between;
 }
 
+
+
 .product-section {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+}
+
+
+
+
+#quick-view-box {
+    height: 600px;
+    width: 600px;
+    /* border: 5px solid black; */
+    margin: auto;
+    /* position: absolute; */
+    margin: 50px 200px 0px 400px;
+    visibility: hidden;
+    display: flex;
+    background-color: white;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    z-index: 99;
+
+
+}
+
+#quick-view-box-first
+{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+#quick-view-box-first div
+{
+    height: 60%;
+    /* border: 2px solid black; */
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#quick-view-box-second
+{
+    /* border: 1px solid yellow; */
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .left-section {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 15%;
+    height: 450px;
     overflow: scroll;
-    overflow-x: hidden;
-    text-overflow: clip;
+    overflow-x: auto;
+    overflow-y: hidden auto;
+    /* text-overflow: clip; */
+    padding: 3px;
+    /* white-space: no-wrap; */
 
 
 }
 
+.border-top {
+    border-top: 1px solid rgb(163, 159, 159);
+}
+
 .right-section {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 85%;
     display: absolute;
 
@@ -40,18 +102,19 @@ body {
 
 }
 
-.display-width-90 {
+.right-top-section-div {
     /* border: 1px solid black; */
-    width: 92%;
-    position: relative;
+    width: 93%;
+
+    /* position: relative; */
 }
 
-.display-width-90 div {
+.right-top-section-div div {
 
     display: inline-block;
     margin: auto;
     /* border: 1px solid black; */
-    margin-top: -40px;
+    margin-top: -35px;
 }
 
 .border-bottom {
@@ -59,10 +122,12 @@ body {
     /* margin-top: 10px; */
     padding: 15px 0px 15px 2px;
     font-size: 16px;
+    color: #393939;
 }
 
 .border-bottom div {
     font-weight: 600;
+    cursor: pointer;
 }
 
 .text-align-center {
@@ -71,12 +136,14 @@ body {
 }
 
 .heading-right-section {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     height: 50px;
     justify-content: center;
     align-items: center;
     position: relative;
+    font-weight: 700;
+    font-size: 21px;
 }
 
 
@@ -84,10 +151,14 @@ body {
 .underline {
     border-bottom: 1px solid black;
     cursor: pointer;
+    padding: 3px;
+    margin-top: -2px;
+    /* border: 1px solid black; */
+
 
 }
 
-.underline :hover {
+.underline:hover {
     border-bottom: 2px solid black;
 }
 
@@ -102,7 +173,7 @@ body {
 }
 
 .right-bottom-section-upper-first-p {
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
 }
 
 .right-bottom-section-upper span {
@@ -116,6 +187,98 @@ body {
 }
 
 .right-bottom-section-upper div p:hover {
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
 
+}
+
+
+/* ------------------------------ */
+
+#filter-box {
+    /* border: 1px solid black; */
+    /* margin-top: 20px; */
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+}
+
+#filter-box select {
+    padding: 7px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+
+
+
+
+/* -----------------------------------container----------------------------------------- */
+#right-bottom-section-lower-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    height: 600px;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+    scroll-behavior: smooth;
+
+}
+
+
+
+#right-bottom-section-lower-container div {
+    line-height: 20px;
+}
+
+#right-bottom-section-lower-container div img {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+/* ------------------------------------------price, title */
+
+.ProductTitle,
+.ProductPrice {
+    font-weight: 700;
+    color: #393939;
+}
+
+
+
+.fontweight-100
+{
+    font-size: 13px;
+    font-weight: 100;
+}
+
+/* --------------------Quick View ------------------------*/
+.quick-view {
+    border: 1px solid black;
+    margin-top: -30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+
+#closeSymbol
+{
+    cursor: pointer;
+    margin-left: 250px;
 }
