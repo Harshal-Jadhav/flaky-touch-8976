@@ -28,13 +28,6 @@
 #inputContainer>div:first-child{
     font-size: 20px;
 }
-#part1{
-    padding: 4px 8px;
-    border-radius: 50%;
-    background-color: black;
-    color: white;
-    font-size: 16px;
-}
 #inputForm{
     margin-top: 16px;
 }
@@ -106,12 +99,6 @@
 }
 #ctnBtn>button:hover{
     background-color: black;
-}
-#part2{
-    border: 1px solid;
-    padding: 4px 8px;
-    border-radius: 50%;
-    font-size: 16px;
 }
 #ldes{
     width: 80%;
@@ -214,4 +201,21 @@
     margin: auto;
     border: none;
     cursor: pointer;
+}
+#part1{
+    border: 1px solid;
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+#part2{
+    padding: 4px 8px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+form{
+    border: 1px solid;
+    padding-top: 16px;
 }
