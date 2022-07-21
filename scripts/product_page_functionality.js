@@ -7,6 +7,8 @@ let products = [{
         color: 'Gray',
         sale: '3872.30',
         AfterSalePrice: '5,473.20',
+        qty:1,
+        
         
 
     },
@@ -21,6 +23,7 @@ let products = [{
         color: 'Black',
         sale: '3367.80',
         AfterSalePrice: '4,631.20',
+        qty:1,
 
     },
 
@@ -34,6 +37,7 @@ let products = [{
         color: 'Dark Gray',
         sale: '3956.50',
         AfterSalePrice: '6,694.70',
+        qty:1,
 
     },
 
@@ -47,6 +51,7 @@ let products = [{
         color: 'Light Blue',
         sale: '7569.85',
         AfterSalePrice: '12,209.44',
+        qty:1,
 
     },
 
@@ -60,6 +65,7 @@ let products = [{
         color: 'White',
         sale: '6314.38',
         AfterSalePrice: '10,777.20',
+        qty:1,
 
     },
 
@@ -73,6 +79,7 @@ let products = [{
         color: 'Pine Tree',
         sale: '5051.34',
         AfterSalePrice: '7,999.20',
+        qty:1,
 
     },
 
@@ -86,6 +93,7 @@ let products = [{
         color: 'Heather Blue Opal',
         sale: '4461.92',
         AfterSalePrice: '7,574.20',
+        qty:1,
 
     },
 
@@ -99,6 +107,7 @@ let products = [{
         color: 'Gala Purple',
         sale: '7569.86',
         AfterSalePrice: '12,208.20',
+        qty:1,
 
     },
 
@@ -112,6 +121,7 @@ let products = [{
         color: 'Green Milieu',
         sale: '1346.41',
         AfterSalePrice: '2,062.97',
+        qty:1,
 
     },
 
@@ -125,6 +135,7 @@ let products = [{
         color: 'Blue Night',
         sale: '3872.30.50',
         AfterSalePrice: '5,473.20',
+        qty:1,
 
     },
 
@@ -138,6 +149,7 @@ let products = [{
         color: 'Blue Poppy',
         sale: '5043.76',
         AfterSalePrice: '8,251.89',
+        qty:1,
 
     },
 
@@ -151,6 +163,7 @@ let products = [{
         color: 'Brown Buckthorn',
         sale: '3367.28',
         AfterSalePrice: '4,967.98',
+        qty:1,
 
     },
 
@@ -164,6 +177,7 @@ let products = [{
         color: 'Black',
         sale: '3872.50',
         AfterSalePrice: '5,725.20',
+        qty:1,
 
     },
 
@@ -177,6 +191,7 @@ let products = [{
         color: 'White',
         sale: '8411.88',
         AfterSalePrice: '13,051.47',
+        qty:1,
 
     },
 
@@ -190,6 +205,7 @@ let products = [{
         color: 'Yellow',
         sale: '3367.80',
         AfterSalePrice: '5,052.18',
+        qty:1,
 
     },
 
@@ -203,6 +219,7 @@ let products = [{
         color: 'Blue Poppy',
         sale: '5043.76',
         AfterSalePrice: '8,251.89',
+        qty:1,
 
     },
 
@@ -216,6 +233,7 @@ let products = [{
         color: 'Blue Hydrangea',
         sale: '3359.70',
         AfterSalePrice: '5,010.20',
+        qty:1,
 
     },
 
@@ -229,6 +247,7 @@ let products = [{
         color: 'Black Forest',
         sale: '3956.70',
         AfterSalePrice: '5,725.80',
+        qty:1,
 
     },
     // 19
@@ -241,6 +260,7 @@ let products = [{
         color: 'Black',
         sale: '4461.92',
         AfterSalePrice: '7,536.20',
+        qty:1,
 
     },
 
@@ -254,6 +274,7 @@ let products = [{
         color: 'Blue Geo Twill Print',
         sale: '9939.92',
         AfterSalePrice: '',
+        qty:1,
 
     },
     // 21
@@ -266,6 +287,7 @@ let products = [{
         color: 'Heather Red',
         sale: '4209.31',
         AfterSalePrice: '7,774.06',
+        qty:1,
 
     },
 
@@ -279,6 +301,7 @@ let products = [{
         color: 'French Blue',
         sale: '3359.70',
         AfterSalePrice: '5,010.08',
+        qty:1,
 
     },
 
@@ -292,6 +315,7 @@ let products = [{
         color: 'Black',
         sale: '2938.29',
         AfterSalePrice: '4,168.05',
+        qty:1,
 
     },
 
@@ -305,6 +329,7 @@ let products = [{
         color: 'White',
         sale: '5043.76',
         AfterSalePrice: '7,999.29',
+        qty:1,
 
     },
     // 25
@@ -317,6 +342,7 @@ let products = [{
         color: 'White',
         sale: '8411.80',
         AfterSalePrice: '13,051.47',
+        qty:1,
 
     },
 
@@ -330,6 +356,7 @@ let products = [{
         color: 'Black',
         sale: '5051.34',
         AfterSalePrice: '7,999.29',
+        qty:1,
 
     },
     //27
@@ -342,6 +369,7 @@ let products = [{
         color: 'Cipen Blue',
         sale: '6651.19',
         AfterSalePrice: '9,935.95',
+        qty:1,
 
     },
 
@@ -355,6 +383,7 @@ let products = [{
         color: 'Pink Floral',
         sale: '7577.43',
         AfterSalePrice: '10,777.98',
+        qty:1,
 
     },
 
@@ -368,6 +397,7 @@ let products = [{
         color: 'Liberty Navy',
         sale: '3367.28',
         AfterSalePrice: '5,894.21',
+        qty:1,
 
     },
 
@@ -381,6 +411,7 @@ let products = [{
         color: 'Ecru',
         sale: '8419.46',
         AfterSalePrice: '13,388.28',
+        qty:1,
 
     },
     //31
@@ -394,6 +425,7 @@ let products = [{
         color: 'Gray',
         sale: '3999.19',
         AfterSalePrice: '5,473.20',
+        qty:1,
 
     },
 
@@ -407,6 +439,7 @@ let products = [{
         color: 'Black',
         sale: '4400.25',
         AfterSalePrice: '4,631.20',
+        qty:1,
 
     },
 
@@ -420,6 +453,7 @@ let products = [{
         color: 'Dark Gray',
         sale: '4956.50',
         AfterSalePrice: '6,694.70',
+        qty:1,
 
     },
 
@@ -433,6 +467,7 @@ let products = [{
         color: 'Light Blue',
         sale: '8569.85',
         AfterSalePrice: '12,209.44',
+        qty:1,
 
     },
 
@@ -446,6 +481,7 @@ let products = [{
         color: 'White',
         sale: '7314.38',
         AfterSalePrice: '10,777.20',
+        qty:1,
 
     },
 
@@ -459,6 +495,7 @@ let products = [{
         color: 'Pine Tree',
         sale: '6051.34',
         AfterSalePrice: '7,999.20',
+        qty:1,
 
     },
 
@@ -472,6 +509,7 @@ let products = [{
         color: 'Heather Blue Opal',
         sale: '3461.92',
         AfterSalePrice: '7,574.20',
+        qty:1,
 
     },
 
@@ -485,6 +523,7 @@ let products = [{
         color: 'Gala Purple',
         sale: '6569.86',
         AfterSalePrice: '12,208.20',
+        qty:1,
 
     },
 
@@ -498,6 +537,7 @@ let products = [{
         color: 'Green Milieu',
         sale: '3346.41',
         AfterSalePrice: '4,062.97',
+        qty:1,
 
     },
 
@@ -511,6 +551,7 @@ let products = [{
         color: 'Blue Night',
         sale: '4872.50',
         AfterSalePrice: '5,473.20',
+        qty:1,
 
     },
 
@@ -524,6 +565,7 @@ let products = [{
         color: 'Blue Poppy',
         sale: '6043.76',
         AfterSalePrice: '8,251.89',
+        qty:1,
 
     },
 
@@ -537,6 +579,7 @@ let products = [{
         color: 'Brown Buckthorn',
         sale: '4367.80',
         AfterSalePrice: '4,967.98',
+        qty:1,
 
     },
 
@@ -550,6 +593,7 @@ let products = [{
         color: 'Black',
         sale: '4872.50',
         AfterSalePrice: '5,725.20',
+        qty:1,
 
     },
 
@@ -563,6 +607,7 @@ let products = [{
         color: 'White',
         sale: '7411.88',
         AfterSalePrice: '13,051.47',
+        qty:1,
 
     },
 
@@ -576,6 +621,7 @@ let products = [{
         color: 'Yellow',
         sale: '4367.28',
         AfterSalePrice: '5,052.18',
+        qty:1,
 
     },
 
@@ -589,6 +635,7 @@ let products = [{
         color: 'Blue Poppy',
         sale: '6043.76',
         AfterSalePrice: '8,251.89',
+        qty:1,
 
     },
 
@@ -602,6 +649,7 @@ let products = [{
         color: 'Blue Hydrangea',
         sale: '4159.70',
         AfterSalePrice: '5,010.20',
+        qty:1,
 
     },
 
@@ -615,6 +663,7 @@ let products = [{
         color: 'Black Forest',
         sale: '4956.70',
         AfterSalePrice: '5,725.80',
+        qty:1,
 
     },
     // 49
@@ -627,6 +676,7 @@ let products = [{
         color: 'Black',
         sale: '6461.92',
         AfterSalePrice: '7,536.20',
+        qty:1,
 
     },
 
@@ -640,6 +690,7 @@ let products = [{
         color: 'Blue Geo Twill Print',
         sale: '8939.92',
         AfterSalePrice: '',
+        qty:1,
 
     },
     // 51
@@ -652,6 +703,7 @@ let products = [{
         color: 'Heather Red',
         sale: '5209.31',
         AfterSalePrice: '7,774.06',
+        qty:1,
 
     },
 
@@ -665,6 +717,7 @@ let products = [{
         color: 'French Blue',
         sale: '3959.70',
         AfterSalePrice: '5,010.08',
+        qty:1,
 
     },
 
@@ -678,6 +731,7 @@ let products = [{
         color: 'Black',
         sale: '3938',
         AfterSalePrice: '4,168.05',
+        qty:1,
 
     },
 
@@ -691,6 +745,7 @@ let products = [{
         color: 'White',
         sale: '6043.76',
         AfterSalePrice: '7,999.29',
+        qty:1,
 
     },
     // 55
@@ -703,6 +758,7 @@ let products = [{
         color: 'White',
         sale: '10411.80',
         AfterSalePrice: '13,051.47',
+        qty:1,
 
     },
 
@@ -716,6 +772,7 @@ let products = [{
         color: 'Black',
         sale: '6251.34',
         AfterSalePrice: '7,999.29',
+        qty:1,
 
     },
     //57
@@ -728,6 +785,7 @@ let products = [{
         color: 'Cipen Blue',
         sale: '8651.19',
         AfterSalePrice: '9,935.95',
+        qty:1,
 
     },
 
@@ -741,6 +799,7 @@ let products = [{
         color: 'Pink Floral',
         sale: '6577.43',
         AfterSalePrice: '10,777.98',
+        qty:1,
 
     },
 
@@ -754,6 +813,7 @@ let products = [{
         color: 'Liberty Navy',
         sale: '4367.28',
         AfterSalePrice: '5,894.21',
+        qty:1,
 
     },
 
@@ -767,6 +827,7 @@ let products = [{
         color: 'Ecru',
         sale: '9419.46',
         AfterSalePrice: '13,388.28',
+        qty:1,
 
     },
 
@@ -810,6 +871,7 @@ let showProduct = (data) => {
 
         let aftersale = document.createElement('p')
         aftersale.innerText = `After Sale: INR ${el.AfterSalePrice}`
+        qty:1,
         aftersale.className='fontweight-100'
 
         
@@ -912,6 +974,7 @@ function showDetail(el)
 
    let aftersale = document.createElement('p')
    aftersale.innerText=`After Sale: INR ${el.AfterSalePrice}`
+   qty:1,
 
    let anniversary = document.createElement('h3')
    anniversary.innerText='Anniversary Sale'
