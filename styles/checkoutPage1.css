@@ -13,6 +13,9 @@
     grid-template-columns: 65% 35%;
     margin-bottom: 24px;
 }
+#details{
+    padding-right: 20px;
+}
 #details>div>h1{
     font-weight: 100;
 }
@@ -41,7 +44,7 @@
     font-size: 17px;
     outline: none;
 }
-.ipf:focus{
+.ipf:focus,#promocode>input:focus{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #inputForm>div:nth-child(4),#inputForm>div:nth-child(9){
@@ -112,4 +115,61 @@
     margin: auto;
     text-align: center;
     font-size: 12px;
+}
+#order{
+    background-color: #f4f4f4;
+}
+#order>h3{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 100;
+    padding-top: 12px;
+}
+#order>h3>span{
+    font-size: 40px;
+}
+#Final+h2>small{
+    font-size: 15px;
+    font-weight: 600;
+}
+#cartvalue{
+    list-style: none;
+}
+#cartvalue>li{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+#cartvalue>li:not(:last-child){
+    font-weight: 100;
+    font-size: 15px;
+}
+#prcheck{
+    cursor: pointer;
+    padding-left: 10px;
+}
+#promocode{
+    display: none;
+    padding-left: 20px;
+    margin-top: 10px;
+    align-items: center;
+    gap: 10px;
+}
+#promocode>input{
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.581);
+    outline: none;
+    border-radius: 4px;
+}
+#promocode>button{
+    height: 40px;
+    width: 100px;
+    background-color: #2a9dcc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
 }

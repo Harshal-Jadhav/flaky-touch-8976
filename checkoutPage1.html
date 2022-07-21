@@ -72,7 +72,7 @@
                     </div>
                 </div>
             </form>
-            <div id="ctnBtn">
+            <div id="ctnBtn" class="continueBtn">
                 <button>Continue</button>
             </div><br>
             <hr><br>
@@ -87,8 +87,43 @@
                     Waterview Drive,CT.</p>
             </div>
         </div>
-        <div id="order"></div>
+        <div id="order">
+            <h3><span class="material-symbols-outlined">shopping_cart</span> Your Order</h3>
+            <div id="ctnBtn" class="continueBtn">
+                <button>Continue</button>
+            </div>
+            <div>
+                <ul id="cartvalue">
+                    <li>
+                        <p>Items</p>
+                        <p id="totalvalue">Rs 17306</p>
+                    </li>
+                    <li>
+                        <p>Shipping</p>
+                        <p>Rs 6326</p>
+                    </li>
+                    <li>
+                        <p>Duties & taxes</p>
+                        <p>Rs 17507</p>
+                    </li>
+                    <li>
+                        <h2 id="Final">Total</h2>
+                        <h2><small>(INR)</small> 41139</h2>
+                    </li>
+                </ul>
+                <hr>
+            </div><br>
+            <div id="promo">
+                <h3 id="prcheck"><span>+</span> Promo Code</h3>
+                <div id="promocode">
+                    <input type="text" name="promoCode" id="promoCode">
+                    <button>Apply</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
 </html>
+
+<script src="./scripts/checkoutPage1.js" type="module"></script>
