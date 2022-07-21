@@ -974,7 +974,7 @@ function showDetail(el)
 
    let aftersale = document.createElement('p')
    aftersale.innerText=`After Sale: INR ${el.AfterSalePrice}`
-   qty:1,
+   
 
    let anniversary = document.createElement('h3')
    anniversary.innerText='Anniversary Sale'
