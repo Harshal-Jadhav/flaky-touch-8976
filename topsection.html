@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #image1{
+        display:grid;
+        height:500px;
+        width:1300px;
+        margin:auto;
+        grid-template-columns:65% 35%;
+        grid-template-rows:500px 500px;
+        /* border:1px solid red; */
+        margin-bottom:50px;
+       }
+       /* #image1 > div{
+        border:1px solid green;
+       } */
+       #image1 > div > img{
+        height:100%;
+        width:100%;
+
+       }
+       #box2{
+        background-color:yellow;
+       }
+       #box3{
+        height:50px;
+        width:80%;
+        /* border:1px solid red; */
+        display:flex;
+        gap:20px;
+        margin-left:20px;
+        font-family: Sans-Serif;
+        color:#393939;
+        font-size:16px;
+        text-decoration: underline;
+       cursor:pointer;
+       font-size:18px;
+       }
+       #box4{
+        display:flex;
+        height:50px;
+        width:50%;
+        /* border:1px solid red; */
+        gap:20px;
+        margin-left:20px;
+        font-family: Sans-Serif;
+        color:#393939;
+        text-decoration: underline;
+        cursor:pointer;
+        font-size:18px;
+       }
+       
+       #box2 > div{
+        margin-top:100px;
+       }
+       #box2 > div > div{
+        margin-left:20px;
+       }
+       .child1:hover{
+        text-decoration: underline solid black 2px;
+       }
+       .child2:hover{
+        text-decoration: underline solid black 2px;
+       }
+       .child3{
+        cursor:pointer;
+       }
+       .child{
+        font-family: Sans-Serif;
+        color:#393939;
+        font-size:14px;
+       }
+       #box{
+        font-family: Sans-Serif;
+        color:#393939;
+        font-size:14px;
+        cursor:pointer;
+       }
+       #shadow-1{
+        height:150px;
+        width:93%;
+        margin:auto;
+        border:35px solid rgb(238,238,228);
+       }
+       #shadow-2{
+        display:flex;
+        height:80%;
+        width:80%;
+        /* border:1px solid black; */
+        margin:auto;
+        margin-top:15px;
+       }
+       #shadow-3{
+        height:100%;
+        width:40%;
+        /* border:1px solid green; */
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows:50% 50%;
+       }
+       /* #shadow-3 >div{
+        border:1px solid black;
+       } */
+       #shadow-4{
+        height:100%;
+        width:60%;
+        /* border:1px solid blue; */
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows:50% 50%;
+        
+       }
+       /* #shadow-4 >div{
+        border:1px solid black;
+       } */
+       #s-1{
+        font-size:30px;
+        font-weight:bold;
+        font-family: Sans-Serif;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+       }
+       #s-2{
+        font-size:30px;
+        font-weight:bold;
+        font-family: Sans-Serif;
+        display:flex;
+        justify-content:center;
+        color:orangered;
+       }
+       #s-3{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-family: Sans-Serif;
+        color:#393939;
+        font-size:14px;
+       }
+       #s-4 > div{
+        display:flex;
+        height:50px;
+        width:60%;
+        /* border:1px solid black; */
+        gap:10%;
+        margin-left:40px;
+        font-family: Sans-Serif;
+        color:#393939;
+        font-size:14px;
+        text-decoration: underline solid black 1px;
+       }
+       #l-1:hover{
+        cursor:pointer;
+        text-decoration: underline solid black 2px;
+       }
+       #l-2:hover{
+        cursor:pointer;
+        text-decoration: underline solid black 2px;
+       }
+       
+       
+      
+       
+    </style>    
+</head>
+<body>
+    <div id="image1">
+        <div>
+            <img src="https://s.hdnux.com/photos/01/26/47/25/22705524/3/ratio3x2_1800.jpg"alt="image1"/>
+        </div>
+        <div id="box2">
+           <div> 
+            <div>
+            <h1 class="child3">IT'S ON!</h1>
+            <p class="child">Pick up today in store or curbside.</p>
+            <p class="child3"id="box">Get Inspired</p>
+            <p class="child">Shop Now:</p>
+            </div>
+            <div id="box3">
+               
+                 <p class="child1">Women</p>
+                
+               
+                 <p class="child1">Men</p>
+                
+                 <p class="child1">Activewear</p>
+                
+                 <p class="child1">Kids</p>
+                
+                 <p class="child1">Home</p>
+                  
+            </div>
+            <div id="box4">
+                <p class="child2">Beauty Exclusive</p>
+                <p class="child2">All</p>
+        </div>
+        </div>       
+        </div>   
+       
+    </div>
+    <div id="shadow-1">
+        <div id="shadow-2">
+            <div id="shadow-3">
+                <div id="s-1">SELECTED CLEARANCE</div>
+                <div id="s-2">EXTRA 25% OFF</div>
+            </div>
+            <div id="shadow-4">
+                <div id="s-3">Online and in stores through July 24-hurry,the best deals go fast.Exclusions apply.</div>
+                <div id="s-4">
+                    <div>
+                        <div id="l-1">Sale</div>
+                        <div id="l-2">Exclusions & Restrictions</div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
