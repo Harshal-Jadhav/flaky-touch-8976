@@ -1,0 +1,40 @@
+#signin{
+    width: 30%;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+
+}
+#signin>h2{
+    font-weight: lighter;
+}
+form{
+    width: 90%;
+    /* border: 1px solid black; */
+    /* padding: 10px; */
+}
+form>input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    
+
+}
+form>label{
+    font-size: 18px;
+}
+form>input[type=submit]
+{
+
+    background-color: black;
+    color: white;
+    border: 0px;
+}
+form>input[type=submit]:hover{
+    background-color: grey;
+
+}
