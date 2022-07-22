@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-       #image1{
+   
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+   <style>
+    #image1{
         display:grid;
         height:500px;
-        width:1300px;
+        width:98%;
         margin:auto;
         grid-template-columns:65% 35%;
         grid-template-rows:500px 500px;
@@ -86,6 +89,7 @@
         width:93%;
         margin:auto;
         border:35px solid rgb(238,238,228);
+        
        }
        #shadow-2{
         display:flex;
@@ -94,6 +98,7 @@
         /* border:1px solid black; */
         margin:auto;
         margin-top:15px;
+        margin-bottom:90px;
        }
        #shadow-3{
         height:100%;
@@ -162,13 +167,76 @@
         cursor:pointer;
         text-decoration: underline solid black 2px;
        }
+    .container{
+        
+        /* height:630px; */
+        width:98%;
+        margin:auto;
+        /* border:1px solid green; */
+        margin-top:90px;
+        
+    }
+    .reveiw >img{
+        height:100%;
+        width:100%;
+    }
+    .swiper-button-prev:hover{
+        background-color:black;
+        color:white;
+    }
+    .swiper-button-next:hover{
+        background-color:black;
+        color:white;
+        
+ 
+    }
+    #abs{
+        height:100px;
+        width:98%;
+        
+        /* border:1px solid red; */
+        margin:auto;
+    }
+    #abs-p{
+        font-family:sans-serif;
+        color:#393939;
+        font-weight:bold;
+        font-size:20px;
+        margin-top:70px;
+    }
+    #rad-1{
+        display:flex;
+        height:300px;
+        width:98%;
+        
+        /* border:1px solid blue; */
+        gap:10px;
+        margin:auto;
+    }
+    #rad-1 >div{
+        
+        height:100%;
+        width:18%;
+        /* border:1px solid black; */
+
+    }
+    #rad-1 >div >img{
+        height:80%;
+        width:100%;
+    }
+    .as{
+        font-family:sans-serif;
+        color:#393939;
+        font-weight:bold;
+        font-size:14px;
+        background-color:yellow;
+        margin-right:80px;
        
-       
-      
-       
-    </style>    
+    }
+   </style>
 </head>
 <body>
+     
     <div id="image1">
         <div>
             <img src="https://s.hdnux.com/photos/01/26/47/25/22705524/3/ratio3x2_1800.jpg"alt="image1"/>
@@ -219,5 +287,76 @@
                 </div>
         </div>
     </div>
+    </div>
+
+<!-- swipper -->
+ 
+ <div class="container">
+ 
+    <div class="swiper">
+       
+        <div class="swiper-wrapper">
+           
+          <div class="swiper-slide"> 
+            <div class="reveiw">
+                 
+                <img src="https://n.nordstrommedia.com/id/d6569e83-b6a1-4704-a09b-e361d898031d.jpeg?h=700&w=1608" alt="">
+               
+                  
+                <div onclick="nextPage()" id="next"></div>
+              
+       
+        </div>
+        </div>
+       
+         <div class="swiper-slide"> 
+            <div class="reveiw">
+                 
+                <img src="https://n.nordstrommedia.com/id/2c50b98a-f701-4ae7-bcd6-40d784dcbb4f.jpeg?h=700&w=1608" alt="">
+                
+                
+              
+                <div onclick="nextPage()" id="next"></div>
+               
+        </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="reveiw">
+                  
+                 
+                <img src="https://n.nordstrommedia.com/id/5c95199d-2d5c-4ade-a136-7e575ed09f28.jpeg?h=700&w=1608" alt="">
+                <div onclick="nextPage()" id="next"> 
+               
+            </div>
+            </div>
+
+
+        
+        </div> 
+
+
+      
+
+        </div>
+         <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+   
+</div>
+</div>
+<div id="abs"><p id="abs-p">Anniversary best sellers</p></div>
+<div id="rad-1">
+    <div><img src="https://n.nordstrommedia.com/id/sr3/c962cd16-1bff-46b4-8f8f-e26f5079eb35.jpeg?q=45&dpr=2&h=262&w=170" alt="logo1"><p class="as">Anniversary Sale</p></div>
+    <div><img src="	https://n.nordstrommedia.com/id/sr3/0402caad-e234-414d-98db-65b3c3975da2.jpeg?q=45&dpr=2&h=262&w=170" alt="logo2"><p class="as">Anniversary Sale</p></div>
+    <div><img src="https://n.nordstrommedia.com/id/sr3/93994001-920a-41f2-9c3e-a00b988f5cf2.jpeg?q=45&dpr=2&h=262&w=170
+        " alt="logo3"><p  class="as">Anniversary Sale</p></div>
+    <div><img src="https://n.nordstrommedia.com/id/sr3/fbfaa64f-f0ce-44af-9761-499f251db33d.jpeg?q=45&dpr=2&h=262&w=170" alt="logo4"><p  class="as">Anniversary Sale</p></div>
+    <div><img src="	https://n.nordstrommedia.com/id/sr3/d8c7bfa5-8793-4f8b-9b60-ad37122854c8.jpeg?q=45&dpr=2&h=262&w=170" alt="logo5"><p  class="as">Anniversary Sale</p></div>
+    <div><img src="https://n.nordstrommedia.com/id/sr3/f4c8c06d-9352-4453-ad3b-9b9ce8450389.jpeg?q=45&dpr=2&h=262&w=170" alt="logo6"><p  class="as">Anniversary Sale</p></div>
+</div>
 </body>
 </html>
+<script src="./scripts/index.js"></script> 
+
+ 
