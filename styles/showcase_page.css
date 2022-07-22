@@ -1,0 +1,277 @@
+.display-flex {
+    display: flex;
+}
+
+/* Upper heading */
+.upper-heading {
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+
+
+/* upper -box */
+#upper-container-show-detail {
+    width: 100%;
+    height: 600px;
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+/* Container for data */
+.imageDiv {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.imageDiv>div
+{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 20px;
+}
+
+.dataOnly {
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.dataOnly>div
+{
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 90%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 19px;
+}
+
+
+/* Description box */
+.description {
+    width: 60%;
+    /* border: 1px solid black; */
+    height: auto;
+    line-height: 25px;
+    color: #393939;
+}
+
+.description-1 span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.description-1,
+.description-2 {
+    padding: 30px;
+}
+
+
+/* horizontal line */
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid lightgray;
+}
+
+
+/* question-div */
+.question-div {
+    width: 60%;
+    height: 150px;
+    /* border: 1px solid black; */
+    padding: 30px;
+    color: #393939;
+}
+
+.question-div div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+.question-div #chat-box {
+    border: 1px solid black;
+    display: inline;
+    padding: 10px 20px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+
+/* Review Div */
+.review-div {
+    width: 60%;
+    height: 300px;
+    /* border: 1px solid black; */
+    padding: 30px;
+    /* justify-content: space-between; */
+}
+
+.review-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.review-box>div:last-child {
+    border: 1px solid black;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+
+
+/* Star bar rating */
+.fa {
+    font-size: 25px;
+}
+
+.checked {
+    color: yellow;
+}
+
+/* Three column layout */
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+
+.middle {
+    margin-top: 10px;
+    float: left;
+    width: 70%;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+/* Individual bars */
+.bar-5 {
+    width: 60%;
+    height: 18px;
+    background-color: black;
+}
+
+.bar-4 {
+    width: 30%;
+    height: 18px;
+    background-color:black;
+}
+
+.bar-3 {
+    width: 10%;
+    height: 18px;
+    background-color:black;
+}
+
+.bar-2 {
+    width: 4%;
+    height: 18px;
+    background-color:black;
+}
+
+.bar-1 {
+    width: 15%;
+    height: 18px;
+    background-color:black;
+}
+
+
+
+.review-input-1 {
+    /* border: 1px solid black; */
+    padding: 20px 0px;
+}
+
+
+.review-input-1>div {
+    /* max-width:max-content; */
+    width: 60%;
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.review-input-1>div>input {
+    width: 90%;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+
+.select-div {
+    /* border: 1px solid black; */
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.select-box {
+    padding: 10px 40px;
+    outline: none;
+}
+
+
+
+
+/* Align - item center */
+.align-item {
+
+    align-items: center;
+
+}
+
+
+
+/* gift box */
+.shop-gift {
+    border: 2px solid #393939;
+    padding: 10px 40px;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+
+
+
+/* load reviwe */
+
+.load-review>p {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+
+
+.selectSize{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
