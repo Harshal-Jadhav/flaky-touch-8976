@@ -30,19 +30,30 @@
             <div><span id="part2">2</span> Payment</div>
             <br>
             <div id="paymentForm">
-                <span><input type="checkbox" name="" id="chb1"> My billing address is the same as my delivery address
+                <span><input type="checkbox" name="" id="chb1" checked> My billing address is the same as my delivery address
                 </span><br><br><br>
                 <span><input type="radio" name="" id="rdb1"> Credit or Debit Card</span>
                 <form>
-                    <input type="number" name="cardNumber" id="cardNumber" placeholder="Card Number">
+                    <input type="number" name="cardNumber" id="cardNumber" placeholder="Card Number" required>
                     <div id="mmcvv">
-                        <input type="number" name="mmyy" id="mmyy" placeholder="MM / YY">
-                        <input type="number" name="cvv" id="cvv" placeholder="CVV">
+                        <input type="text" name="mmyy" id="mmyy" placeholder="MM / YY" required>
+                        <input type="number" name="cvv" id="cvv" placeholder="CVV" required>
                     </div>
                 </form>
             </div>
             <br>
-            <hr><br>
+            <div id="bottomPart">
+                <div>
+                    <input type="checkbox" name="" id="ch" checked>
+                    <p>Send me electronic or mail offers from Borderfree.You may opt out at any time.</p><br><br>
+                    <input type="checkbox" name="" id="ch" checked>
+                    <p>Send me electronic or mail offers from Borderfree.You may opt out at any time.</p>
+                </div>
+                <div id="pyo">
+                    <div id="ctnBtn" class="continueBtn"><button>Place your order</button></div><br>
+                    <p>This order total is 100%guaranteed.There will be no additional charges due upon receipt.</p>
+                </div><br><hr><br>
+            </div>
             <div id="ldes">
                 <p>By placing your order,you agree to the Terms&Conditions and Privacy Policy of Borderfree from Pitney
                     Bowes,
@@ -84,10 +95,12 @@
                     <button>Apply</button>
                 </div>
             </div>
-            <br><hr>
+            <br>
+            <hr>
             <div id="orderProducts">
                 <div class="opc">
-                    <div><img src="https://n.nordstrommedia.com/id/sr3/68f62117-fff3-4d2a-b0bd-f851fde947df.jpeg" alt=""></div>
+                    <div><img src="https://n.nordstrommedia.com/id/sr3/68f62117-fff3-4d2a-b0bd-f851fde947df.jpeg"
+                            alt=""></div>
                     <div>
                         <h4>Torrey Performance Shorts</h4>
                         <p>Color: Black</p>
@@ -97,7 +110,8 @@
                     </div>
                 </div>
                 <div class="opc">
-                    <div><img src="https://n.nordstrommedia.com/id/sr3/68f62117-fff3-4d2a-b0bd-f851fde947df.jpeg" alt=""></div>
+                    <div><img src="https://n.nordstrommedia.com/id/sr3/68f62117-fff3-4d2a-b0bd-f851fde947df.jpeg"
+                            alt=""></div>
                     <div>
                         <h4>Torrey Performance Shorts</h4>
                         <p>Color: Black</p>
@@ -107,7 +121,8 @@
                     </div>
                 </div>
                 <div class="opc">
-                    <div><img src="https://n.nordstrommedia.com/id/sr3/68f62117-fff3-4d2a-b0bd-f851fde947df.jpeg" alt=""></div>
+                    <div><img src="https://n.nordstrommedia.com/id/sr3/68f62117-fff3-4d2a-b0bd-f851fde947df.jpeg"
+                            alt=""></div>
                     <div>
                         <h4>Torrey Performance Shorts</h4>
                         <p>Color: Black</p>
@@ -117,7 +132,8 @@
                     </div>
                 </div>
                 <div class="opc">
-                    <div><img src="https://n.nordstrommedia.com/id/sr3/68f62117-fff3-4d2a-b0bd-f851fde947df.jpeg" alt=""></div>
+                    <div><img src="https://n.nordstrommedia.com/id/sr3/68f62117-fff3-4d2a-b0bd-f851fde947df.jpeg"
+                            alt=""></div>
                     <div>
                         <h4>Torrey Performance Shorts</h4>
                         <p>Color: Black</p>
@@ -134,4 +150,4 @@
 
 </html>
 
-<script src="./scripts/checkoutPage1.js" type="module"></script>
+<script src="./scripts/checkoutPage2.js" type="module"></script>
