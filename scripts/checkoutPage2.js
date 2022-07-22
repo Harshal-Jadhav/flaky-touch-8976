@@ -1,5 +1,5 @@
 
-//!-----------------------------------Function to toggle promocode div---------------------------------------
+// !Function to toggle promocode div
 let toggle = () => {
     let x = document.querySelector('#promocode')
     if (x.style.display == 'flex') {
@@ -13,9 +13,7 @@ let toggle = () => {
 document.querySelector('#prcheck').addEventListener('click', toggle)
 
 
-//!------------------------------Function to toggle Order Products height-----------------------------------------
-
-
+// !Function to toggle Order Products height
 let toggleHeight = () => {
     let x = document.getElementById('orderProducts');
     if (x.style.height == '435px') {
