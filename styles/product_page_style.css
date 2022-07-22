@@ -37,10 +37,11 @@ body {
     display: flex;
     background-color: white;
     position: fixed;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     overflow: scroll;
     scroll-behavior: smooth;
     z-index: 99;
+    overflow-x: hidden;
 
 
 }
@@ -66,7 +67,7 @@ body {
     width: 50%;
     height: 100%;
     padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 .left-section {
@@ -281,4 +282,13 @@ body {
 {
     cursor: pointer;
     margin-left: 250px;
+}
+
+
+
+
+.selectSize{
+    width: 100%;
+    padding: 10px;
+    outline: none;
 }

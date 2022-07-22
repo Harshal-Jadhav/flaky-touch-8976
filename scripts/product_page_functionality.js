@@ -834,6 +834,9 @@ let products = [{
 ]
 
 
+// ---------------------------------Show data to container---------------------------------------
+
+
 let showProduct = (data) => {
     let maincontainer = document.getElementById('right-bottom-section-lower-container')
     maincontainer.innerHTML = null
@@ -851,6 +854,11 @@ let showProduct = (data) => {
         {
             showDetail(el)
         })
+
+        let anniversary = document.createElement('h4')
+        anniversary.innerText='Anniversary Sale'
+        anniversary.style.display='inline'
+        anniversary.style.background='yellow'
 
         let title = document.createElement('p')
         title.innerText = el.title
@@ -871,17 +879,12 @@ let showProduct = (data) => {
 
         let aftersale = document.createElement('p')
         aftersale.innerText = `After Sale: INR ${el.AfterSalePrice}`
-        qty:1,
-        aftersale.className='fontweight-100'
+        aftersale.className='fontweight-100'     
 
-        
-
-
-
-        div.append(image,quickView, title, desc, color, price, aftersale)
+        div.append(image,quickView, anniversary, title, desc, color, price, aftersale)
         image.addEventListener('click',()=>
         {
-            myShowPageFunction(el)
+            myShowProductFunction(el)
         })
         
 
@@ -892,19 +895,17 @@ let showProduct = (data) => {
 
 showProduct(products)
 
-// ----------------------------------------------------My Showcase function
+// ----------------------------------------------------My Showcase function------------------------------------------------------
 
-function myShowPageFunction(el)
+function myShowProductFunction(el)
 {
-    localStorage.setItem('myShowCase',JSON.stringify(el))
-    // console.log('someone clicked me')
-    // console.log(el)
-    window.location.href='showcase_page.html'
+    localStorage.setItem('myShowProductPage',JSON.stringify(el))
+    window.location.href='../flaky-touch-8976/showcase_page.html'
 }
 
 
 
-// ----------------------------------------------------My sort function according to price
+// ----------------------------------------------------My sort function according to price------------------------------------------------------
 
 function handlePriceSort() {
 
@@ -941,7 +942,7 @@ function handlePriceSort() {
 function showDetail(el)
 {
     document.getElementById('quick-view-box').style.visibility='visible'
-    console.log(el)
+    // console.log(el)
 
    let container =  document.getElementById('quick-view-detail')
 //    document.getElementById('quick-view-box').innerHTML=null
@@ -958,7 +959,7 @@ function showDetail(el)
    image.style.cursor='pointer'
    image.addEventListener('click',()=>
    {
-    window.location.href='showcase_page.html'
+    window.location.href='../flaky-touch-8976/showcase_page.html'
    })
    
    let desc= document.createElement('h3')
@@ -971,34 +972,116 @@ function showDetail(el)
 
    let sale = document.createElement('h2')
    sale.innerText=`Sale: INR ${el.sale}`
+   sale.style.marginTop='30px'
 
    let aftersale = document.createElement('p')
    aftersale.innerText=`After Sale: INR ${el.AfterSalePrice}`
+   aftersale.style.marginTop='-10px'
    
 
-   let anniversary = document.createElement('h3')
+   let anniversary = document.createElement('h4')
    anniversary.innerText='Anniversary Sale'
    anniversary.style.background='yellow'
+   anniversary.style.display='inline'
+
+   
+   let size = document.createElement('div')
+   let fit = document.createElement('span')
+   fit.innerText = 'Fit: '
+   fit.style.fontWeight = '600'
+
+   let truesize = document.createElement('span')
+   truesize.innerText = 'True to size'
+
+   let selectDiv = document.createElement('div')
+   selectDiv.style.marginTop='20px'
+
+
+
+
+   let selectSize = document.createElement('select')
+   selectSize.className = 'selectSize'
+   var option1 = document.createElement("option");
+   option1.value = 'Small';
+   option1.text = "Small";
+
+   var option2 = document.createElement("option");
+   option2.value = 'Medium';
+   option2.text = "Medium";
+
+   var option3 = document.createElement("option");
+   option3.value = 'Large';
+   option3.text = 'Large';
+
+   var option4 = document.createElement("option");
+   option4.value = 'X-Large';
+   option4.text = 'X-Large';
+
+   var option5 = document.createElement("option");
+   option5.value = 'XX-Large';
+   option5.text = 'XX-Large';
+
+   selectSize.add(option1);
+   selectSize.add(option2);
+   selectSize.add(option3);
+   selectSize.add(option4);
+   selectSize.add(option5);
+
+   selectDiv.append(selectSize);
+
 
    
    let color = document.createElement('p')
    color.innerText=`Color: ${el.color}`
+
+
+
+
+
    
    let bagbutton = document.createElement('button')
    bagbutton.innerText='Add to Bag'
-   bagbutton.style.padding='10px 30px 10px 30px '
+   bagbutton.style.width='100%'
+   bagbutton.style.padding='10px'
    bagbutton.style.background='black'
    bagbutton.style.color='white'
+   bagbutton.style.display='flex'
    bagbutton.style.margin='auto'
+   bagbutton.style.justifyContent='center'
+   bagbutton.style.alignItems='center'
    bagbutton.style.cursor='pointer'
    bagbutton.addEventListener('click',()=>
    {
     myAddToBag(el)
    })
 
+   let addToWish = document.createElement("p")
+   addToWish.innerText='+Add to Wish List'
+   addToWish.style.textDecoration='underline'
+   addToWish.style.cursor='pointer'
+   addToWish.addEventListener('click',()=>
+   {
+    myAddToWishListFunction(el)
+   })
+
+
+   let seeFullDetail = document.createElement('p')
+   seeFullDetail.innerText='See Full Details'
+   seeFullDetail.style.textAlign='center'
+   seeFullDetail.style.fontSize='13px'
+   seeFullDetail.style.textDecoration='underline'
+   seeFullDetail.style.cursor='pointer'
+   seeFullDetail.style.marginTop='30px'
+   seeFullDetail.addEventListener('click',()=>
+   {
+    localStorage.setItem('myShowProductPage',JSON.stringify(el))
+    window.location.href="../flaky-touch-8976/showcase_page.html"
+   })
+
+
 
    imageOnly.append(image)
-   div.append(desc,title,sale,aftersale,anniversary,color,bagbutton)
+   div.append(desc,title,sale,aftersale,anniversary,size,selectDiv,color,bagbutton,addToWish,seeFullDetail)
    container.append(div)
     
 }
@@ -1015,7 +1098,6 @@ close.addEventListener('click',myCloseFunction)
 function myCloseFunction()
 {
     document.getElementById('quick-view-box').style.visibility='hidden'
-    // console.log(el)
 }
 
 
@@ -1024,8 +1106,22 @@ function myCloseFunction()
 
 // ------------------MyAdd Bag Function----------------
 
+let bag = []
 function myAddToBag(el)
 {
-    localStorage.getItem('myBag',JSON.stringify(el))
-    console.log('Someone Clicked me')
+    bag.push(el)
+    localStorage.setItem('myBag',JSON.stringify(bag))        // Key is ------- myBag
 }
+
+
+
+// -----------------My Add to Wish List function---------------------
+
+let wishList = []
+function myAddToWishListFunction(el)
+{
+    wishList.push(el)
+    localStorage.setItem('myWishList',JSON.stringify(wishList))        // Key is ------- myProductBag
+}
+
+
