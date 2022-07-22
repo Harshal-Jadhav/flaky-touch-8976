@@ -1,0 +1,28 @@
+
+#body-op{
+    padding: 20px;
+    line-height: 30px;
+}
+#body-op h2{
+    font-weight: lighter;
+}
+#body-op>a{
+    color: black;
+}
+#body-op h3{
+    font-weight: lighter;
+}
+#sign-in-info{
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#sign-in-info>a{
+    color: black;
+}
+#head{
+    border-bottom: 1px solid rgb(104, 104, 104);
+    box-sizing: border-box;
+    padding: 10px 0 20px 0;
+    margin-bottom: 10px;
+}

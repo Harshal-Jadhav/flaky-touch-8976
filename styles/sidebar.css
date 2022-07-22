@@ -1,0 +1,94 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#profile-b {
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    /* height: 500px; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+}
+#option{
+    width: 20%;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    padding: 20px;
+    display:block;
+    text-align: center;
+
+}
+#opt-body{
+    width: 80%;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgb(199, 200, 200);
+
+}
+#body-op{
+    background-color: white;
+    /* border:1px solid black; */
+    height: 100%;
+}
+#userName{
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+}
+#userName>img{
+width: 15%;
+
+}
+.options{
+    width: 100%;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 10% 85%;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.options:hover{
+    background-color: rgb(194, 192, 192);
+}
+.options>div:first-child{
+    /* width:15% ; */
+    /* border: 1px solid black; */
+    /* position: absolute;
+    left: 5; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.options>div>img{
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.options>div:last-child
+{
+    /* border: 1px solid black; */
+    /* margin-left: 50px; */
+   /* padding-left: 5px; */
+   text-align: left;
+    
+    
+}
+.options>div:last-child>h2{
+    font-weight: lighter;
+    font-size: 18px;
+
+}
+.options>div:last-child>p{
+    font-size: 14px;
+}

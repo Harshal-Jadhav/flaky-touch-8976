@@ -11,4 +11,5 @@ from.addEventListener("submit",function(event){
     localStorage.setItem("signupData",JSON.stringify(SignupData));
     alert("SignUp Successful.")
     console.log(SignupData)
+    window.location.href="./index.html";
 });
