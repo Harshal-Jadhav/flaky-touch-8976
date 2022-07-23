@@ -61,4 +61,54 @@ let promocode_apply = () => {
 
 document.getElementById('applyCode').addEventListener('click', promocode_apply);
 
+let cart = JSON.parse(localStorage.getItem('myBag')) || []
 
+let append = (data) => {
+    document.getElementById('orderProducts').innerHTML = null;
+    data.forEach((el) => {
+        const card = document.createElement('div');
+        card.setAttribute('class', 'opc');
+
+        const imgdiv = document.createElement('div');
+        const img = document.createElement('img');
+        img.src = el.frontImage;
+        imgdiv.append(img);
+
+        const details = document.createElement('div');
+        const name = document.createElement('h4');
+        name.innerText = el.description;
+        const color = document.createElement('p');
+        color.innerText = `Color: ${el.color}`;
+        const size = document.createElement('p');
+        size.innerText = el.size;
+        const qty = document.createElement('p');
+        qty.innerText = `Qty: ${el.qty}`;
+        const price = document.createElement('p');
+        price.innerText = `Rs ${el.sale}`;
+
+        details.append(name, color, qty, price);
+
+        card.append(imgdiv, details);
+        document.getElementById('orderProducts').append(card);
+    })
+}
+append(cart);
+
+let userdata = {};
+let setData = () => {
+    userdata.email = document.getElementById('email').value;
+    userdata.firstName = document.getElementById('fname').value;
+    userdata.lastName = document.getElementById('lname').value;
+    userdata.address = document.getElementById('address').value;
+    userdata.address2 = document.getElementById('address2').value;
+    userdata.postalCode = document.getElementById('postalCode').value;
+    userdata.city = document.getElementById('city').value;
+    userdata.region = document.getElementById('region').value;
+    userdata.phone = document.getElementById('phone').value;
+    userdata.location = document.getElementById('location').value;
+
+    localStorage.setItem('userData', JSON.stringify(userdata));
+    console.log(userdata);
+}
+
+document.querySelector('#ctnBtn1>button').addEventListener('click', setData);
