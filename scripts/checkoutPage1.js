@@ -38,9 +38,9 @@ document.getElementById('taxvalue').innerText = `Rs ${tax}`;
 let final = (+total + +shipping + +tax);
 document.getElementById('finalPrice').innerText = final;
 localStorage.setItem('finalValue', final);
-
+localStorage.setItem('check', false);
 let promocode_apply = () => {
-    let check = JSON.parse(localStorage.getItem('check')) || 'false';
+    let check = JSON.parse(localStorage.getItem('check'));
     let code = document.getElementById('promoCode').value;
     console.log(check)
     if (check == true) {
@@ -51,10 +51,12 @@ let promocode_apply = () => {
             final = (final - discount).toFixed();
             document.getElementById('finalPrice').innerText = final;
             localStorage.setItem('finalValue', final);
+            check = true;
+            alert('Promocode Applide Sucessfuly')
         } else {
             alert("Invalid promocode")
         }
-        check = true;
+        
         localStorage.setItem('check', check);
     }
 }
@@ -108,7 +110,8 @@ let setData = () => {
     userdata.location = document.getElementById('location').value;
 
     localStorage.setItem('userData', JSON.stringify(userdata));
-    console.log(userdata);
+    window.location.href = "checkoutPage2.html"
 }
 
 document.querySelector('#ctnBtn1>button').addEventListener('click', setData);
+document.querySelector('#ctnBtn2>button').addEventListener('click', setData);
