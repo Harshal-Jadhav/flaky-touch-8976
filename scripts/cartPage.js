@@ -172,7 +172,7 @@ let qtyChange = (qty, el) => {
     append(data);
     console.log(data);
     total();
-
+    window.location.reload();
 }
 
 // *------------------------------Function to removet the itemfrom the bag-----------------------
@@ -182,6 +182,7 @@ let removeItem = (el) => {
     localStorage.setItem('myBag', JSON.stringify(data));
     append(data);
     total();
+    update();
 }
 
 // *------------------------------Function to save the product to the save for later section-------------------
@@ -195,4 +196,22 @@ let saveforlater = (el) => {
     localStorage.setItem('myBag', JSON.stringify(data));
     localStorage.setItem('saveForLater', JSON.stringify(savedForLater));
     append(data);
+    update()
 }
+
+//*-------------------------------Update the values-----------------------------
+
+let update = () => {
+    document.querySelector('#sbsl>div:first-child').innerText = `Shopping Bag (${data.length})`;
+    document.querySelector('#sbsl>div:last-child').innerText = `Saved For Later (${savedForLater.length})`;
+    let total_itemCount = 0;
+    data.forEach((el) => {
+        total_itemCount += Number(el.qty);
+    })
+    document.getElementById('itemCount').innerText = `Delivery (${total_itemCount} items) to India`
+    
+}
+update();
+
+// *--------------Conditions if the cart is empty;
+

@@ -211,10 +211,6 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-#sub {
-    display: block;
-}
-
 #sub>div:first-child {
     display: flex;
     justify-content: space-between;
@@ -278,4 +274,7 @@ h4 {
     padding-left: 10px;
     font-weight: 600;
     margin-top: 8px;
+}
+.toggole_cartEmpty{
+    display: none;
 }

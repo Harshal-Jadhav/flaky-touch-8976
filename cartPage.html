@@ -35,7 +35,7 @@
 
             <div>
                 <p>Shopping Bag</p>
-                <p>Items in your bag are not on hold.</p>
+                <p class="toggole_cartEmpty">Items in your bag are not on hold.</p>
             </div>
 
             <!-- *Main append & side bar section start -->
@@ -56,12 +56,16 @@
                             </span>
                         </div>
                         <div>
-                            <p>Delivery (3 items) to India</p>
+                            <p id="itemCount">Delivery (3 items) to India</p>
                             <p>International Shipping</p>
                         </div>
                     </div><br>
-                    <!-- !Div Where all cart items will append -->
                     <div>
+                        <h2>Your Bag is Empty</h2>
+                        <button>Continue Shopping</button>
+                    </div>
+                    <!-- !Div Where all cart items will append -->
+                    <div class="toggole_cartEmpty">
                         <ul id="cart">
                             <li class="product">
                                 <br>
@@ -132,7 +136,7 @@
                             <p>Need help? Call 1.888.282.6060 or <span class="blue">chat with us</span></p>
                             <p class="blue">Shipping Internationaly?</p>
                         </div>
-                        <div id="sub">
+                        <div id="sub" class="toggole_cartEmpty">
                             <div>
                                 <p>Subtotal</p>
                                 <p id="total">$253</p>
