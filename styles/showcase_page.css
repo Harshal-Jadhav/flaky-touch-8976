@@ -2,10 +2,22 @@
     display: flex;
 }
 
+
+#main-container
+{
+    position: relative;
+}
+
 /* Upper heading */
 .upper-heading {
     /* border: 1px solid black; */
     padding: 10px;
+    cursor: pointer;
+}
+
+.upper-heading:hover
+{
+    text-decoration: underline;
 }
 
 
@@ -32,6 +44,7 @@
     /* border: 1px solid black; */
     margin: auto;
     margin-top: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .dataOnly {
@@ -129,10 +142,12 @@
 /* Star bar rating */
 .fa {
     font-size: 25px;
+    color: rgb(241, 239, 239);
+    
 }
 
 .checked {
-    color: yellow;
+    color:black;
 }
 
 /* Three column layout */
@@ -265,6 +280,7 @@
 .load-review>p {
     text-align: center;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 
@@ -274,4 +290,132 @@
     width: 100%;
     padding: 10px;
     outline: none;
+}
+
+
+
+
+
+
+/* Reviews from customer */
+
+.review-div-customer
+{
+    padding: 30px;
+    /* border: 2px solid black; */
+    width: 60%;
+    color: #393939;
+}
+
+.review-div-customer>div
+{
+    width: 40%;
+    color: #393939;
+
+}
+
+.review-div-customer>div span{
+    font-size: 15px;
+    margin-top: -8px;
+}
+
+.review-div-customer>div p{
+    color: rgb(78, 77, 77);
+    text-align: justify;
+    font-size: 14;
+}
+
+
+.review-div-verified
+{
+    margin-top: -10px;
+}
+
+
+
+
+#recently-viewed
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+    
+}
+
+
+.recently-viewed
+{
+    padding: 30px;
+}
+#recently-viewed div img
+{
+    width: 100%;
+}
+
+
+
+
+/* Quick-view */
+.quick-view
+{
+    display: flex;
+    /* border: 1px solid black; */
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    position: fixed;
+    margin: 100px 0px 0px 350px;
+    background-color: white;
+    visibility: hidden;
+    padding: 10px;
+    box-shadow: rgba(220, 12, 12, 0.15) 2.95px 1.95px 2.6px;
+    
+}
+
+
+
+.quick-view>div:nth-child(1)
+{
+    width: 50%;
+    /* border: 2px solid black; */
+    height: 100%;
+}
+
+#quick-image
+{
+    width: 80%;
+    height: 90%;
+    /* border: 1px solid black; */
+    margin: auto;
+}
+
+
+#quick-detail
+{
+    width: 95%;
+    height: 90%;
+    /* border: 1px solid black; */
+    margin: auto;
+}
+
+.quick-view>div:nth-child(2)
+{
+    width: 50%;
+    /* border: 2px solid black; */
+    height: 100%;
+}
+
+
+
+
+
+
+
+/* Add To wishlist  */
+.addTowish:hover
+{
+    color: #393939;
+    text-decoration: underline;
 }
