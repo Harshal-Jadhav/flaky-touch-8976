@@ -1,5 +1,5 @@
-let data = JSON.parse(localStorage.getItem('myBag')) || [];
-
+let data = JSON.parse(localStorage.getItem('saveForLater')) || [];
+let cart = JSON.parse(localStorage.getItem('myBag'))||[]
 
 let append = (data) => {
     document.getElementById('cart').innerHTML = null;
@@ -137,14 +137,14 @@ let append = (data) => {
 
         const save = document.createElement('button');
         save.setAttribute('class', 'saveForLater')
-        save.innerText = 'Save for Later'
+        save.innerText = 'Add to Bag'
         save.addEventListener('click', () => {
             saveforlater(el);
         })
 
         cardButtons.append(remo, save);
 
-        pd1d2.append(productDetails, quantity, cardButtons);
+        pd1d2.append(productDetails, cardButtons);
         pd1.append(imgdiv, pd1d2);
 
         card.append(br, hr, br, pd1, br3);
@@ -156,34 +156,12 @@ let append = (data) => {
 
 append(data);
 
-// *-------------------------------Function to calculate the total value of the cart----------------------
-let total = () => {
-    let sum = 0;
-    data.forEach((el) => {
-        sum += (+el.qty * +el.sale)
-    })
-    sum = sum.toFixed()
-    console.log(sum)
-    document.getElementById('total').innerText = `Rs ${sum}`
-    localStorage.setItem('total', sum);
-}
-total();
-
-//*--------------------------------Function to calculate the total after the change of quantity
-let qtyChange = (qty, el) => {
-    el.qty = qty;
-    localStorage.setItem('myBag', JSON.stringify(data));
-    append(data);
-    console.log(data);
-    total();
-    window.location.reload();
-}
 
 // *------------------------------Function to removet the itemfrom the bag-----------------------
 let removeItem = (el) => {
     let index = data.indexOf(el);
     data.splice(index, 1);
-    localStorage.setItem('myBag', JSON.stringify(data));
+    localStorage.setItem('saveForLater', JSON.stringify(data));
     append(data);
     total();
     update();
@@ -191,15 +169,13 @@ let removeItem = (el) => {
 }
 
 // *------------------------------Function to save the product to the save for later section-------------------
-let savedForLater = JSON.parse(localStorage.getItem('saveForLater')) || [];
 let saveforlater = (el) => {
     let index = data.indexOf(el);
     let temp = data[index];
     data.splice(index, 1);
-    savedForLater.push(temp);
-    console.log(savedForLater);
-    localStorage.setItem('myBag', JSON.stringify(data));
-    localStorage.setItem('saveForLater', JSON.stringify(savedForLater));
+    cart.push(temp);
+    localStorage.setItem('myBag', JSON.stringify(cart));
+    localStorage.setItem('saveForLater', JSON.stringify(data));
     append(data);
     update()
     window.location.reload();
@@ -208,14 +184,8 @@ let saveforlater = (el) => {
 //*-------------------------------Update the values-----------------------------
 
 let update = () => {
-    document.querySelector('#sbsl>div:first-child').innerText = `Shopping Bag (${data.length})`;
-    document.querySelector('#sbsl>div:last-child').innerText = `Saved For Later (${savedForLater.length})`;
-    let total_itemCount = 0;
-    data.forEach((el) => {
-        total_itemCount += Number(el.qty);
-    })
-    document.getElementById('itemCount').innerText = `Delivery (${total_itemCount} items) to India`
-    
+    document.querySelector('#sbsl>div:first-child').innerText = `Shopping Bag (${cart.length})`;
+    document.querySelector('#sbsl>div:last-child').innerText = `Saved For Later (${data.length})`;    
 }
 update();
 
@@ -225,13 +195,11 @@ if (data.length > 0) {
     document.querySelector('#cartmain>div:first-child').style.display = 'flex';
     document.querySelector('#cartmain>div:nth-child(2)').style.display = 'flex';
     document.getElementById('appendingDiv').style.display = 'block'
-    document.getElementById('sub').style.display = 'block';
     document.getElementById('emptyCart').style.display = 'none';
 } else {
     document.querySelector('#cartmain>div:first-child').style.display = 'none';
     document.querySelector('#cartmain>div:nth-child(2)').style.display = 'none';
     document.getElementById('appendingDiv').style.display = 'none'
-    document.getElementById('sub').style.display = 'none';
     document.getElementById('emptyCart').style.display = 'block';
 }
 
@@ -244,9 +212,6 @@ document.querySelector('#sbsl>div:last-child').addEventListener('click', () => {
     window.location.href = 'saveLaterPage.html';
 })
 
-document.getElementById('checkout').addEventListener('click', () => {
-    window.location.href = 'checkoutPage1.html';
-})
 
 document.getElementById('continueShopping').addEventListener('click', () => {
     window.location.href = 'product_page.html'

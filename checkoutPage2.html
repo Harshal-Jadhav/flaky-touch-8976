@@ -24,7 +24,24 @@
             <br>
             <hr><br>
             <div id="inputContainer">
-                <div><span id="part1">1</span> Delivery</div>
+                <div><span id="part1">1</span> Delivery <a href="./checkoutPage1.html" class="blue" style="text-decoration: none;">(Change)</a> </div>
+                <br>
+                <div id="userdetails">
+                    <div id="delAdd">
+                        <h4>DELIVERY ADDRESS:</h4><br>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div id="delMet">
+                        <h4>DELIVERY METHOD:</h4><br>
+                        <p>STANDARD</p>
+                        <p>NO ADDITIONAL IMPORT CHARGES</p>
+                        <p>DELIVERY</p>
+                        <p>11-21 BUSINESS DAYS</p>
+                    </div>
+                </div>
             </div><br>
             <hr><br>
             <div><span id="part2">2</span> Payment</div>
@@ -50,7 +67,7 @@
                     <p>Send me electronic or mail offers from Borderfree.You may opt out at any time.</p>
                 </div>
                 <div id="pyo">
-                    <div id="ctnBtn" class="continueBtn"><button>Place your order</button></div><br>
+                    <div id="ctnBtn" class="continueBtn"><button id="placeorder2">Place your order</button></div><br>
                     <p>This order total is 100%guaranteed.There will be no additional charges due upon receipt.</p>
                 </div><br><hr><br>
             </div>
@@ -65,7 +82,7 @@
         <div id="order">
             <h3><span class="material-symbols-outlined">shopping_cart</span> Your Order</h3>
             <div id="ctnBtn" class="continueBtn">
-                <button>Place Order</button>
+                <button id="placeorder">Place Order</button>
             </div>
             <div>
                 <ul id="cartvalue">
@@ -75,15 +92,15 @@
                     </li>
                     <li>
                         <p>Shipping</p>
-                        <p>Rs 6326</p>
+                        <p id="Shippingvalue">Rs 6326</p>
                     </li>
                     <li>
                         <p>Duties & taxes</p>
-                        <p>Rs 17507</p>
+                        <p id="taxvalue">Rs 17507</p>
                     </li>
                     <li>
                         <h2 id="Final">Total</h2>
-                        <h2><small>(INR)</small> 41139</h2>
+                        <h2><small>(INR)</small> <span id="finalPrice"></span></h2>
                     </li>
                 </ul>
                 <hr>
@@ -92,7 +109,7 @@
                 <h3 id="prcheck" class="blue"><span class="material-symbols-outlined">add</span> Promo Code</h3>
                 <div id="promocode">
                     <input type="text" name="promoCode" id="promoCode">
-                    <button>Apply</button>
+                    <button id="applyCode">Apply</button>
                 </div>
             </div>
             <br>

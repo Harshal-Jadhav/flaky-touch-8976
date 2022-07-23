@@ -31,7 +31,7 @@
     font-size: 17px;
     cursor: pointer;
 }
-#sbsl>div:first-child{
+#sbsl>div:last-child{
     background-color: rgba(154, 154, 154, 0.658);
     font-weight: 600;
 }

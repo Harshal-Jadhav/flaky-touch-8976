@@ -111,7 +111,7 @@
     padding: 0px 10px;
 }
 #order>h3{
-    border: 1px solid;
+    /* border: 1px solid; */
     display: flex;
     align-items: center;
     font-size: 30px;
@@ -251,4 +251,12 @@ form>div>input{
 }
 #pyo{
     text-align: center;
+}
+
+#userdetails{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#delAdd h4,#delAdd p{
+    text-transform: uppercase;
 }
