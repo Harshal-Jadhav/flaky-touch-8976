@@ -27,3 +27,38 @@ let toggleHeight = () => {
     }
 }
 document.getElementById('showbtn').addEventListener('click', toggleHeight);
+
+
+let total = localStorage.getItem('total');
+document.getElementById('totalvalue').innerText = `Rs ${total}`;
+let shipping = 6987
+document.getElementById('Shippingvalue').innerText = `Rs ${shipping}`
+let tax = (+total * 0.2).toFixed();
+document.getElementById('taxvalue').innerText = `Rs ${tax}`;
+let final = (+total + +shipping + +tax);
+document.getElementById('finalPrice').innerText = final;
+localStorage.setItem('finalValue', final);
+
+let promocode_apply = () => {
+    let check = JSON.parse(localStorage.getItem('check')) || 'false';
+    let code = document.getElementById('promoCode').value;
+    console.log(check)
+    if (check == true) {
+        alert('PromoCode already applied');
+    } else {
+        if (code == 'masai30') {
+            let discount = total * 0.3;
+            final = (final - discount).toFixed();
+            document.getElementById('finalPrice').innerText = final;
+            localStorage.setItem('finalValue', final);
+        } else {
+            alert("Invalid promocode")
+        }
+        check = true;
+        localStorage.setItem('check', check);
+    }
+}
+
+document.getElementById('applyCode').addEventListener('click', promocode_apply);
+
+

@@ -49,7 +49,7 @@
                         <div>Shipping Cost</div>
                     </div>
                     <div>
-                        <span id="srd"><input type="radio" name="" id="" class="rdbtn"></span>
+                        <span id="srd"><input type="radio" name="r" id="" class="rdbtn" checked></span>
                         <div>
                             <p>Express</p>
                             <i>No additional import charges at delivery</i>
@@ -60,7 +60,7 @@
                         </div>
                     </div><br>
                     <div>
-                        <span id="srd"><input type="radio" name="" id="" class="rdbtn"></span>
+                        <span id="srd"><input type="radio" name="r" id="" class="rdbtn"></span>
                         <div>
                             <p>Express</p>
                             <i>import charges collected upon delivery</i>
@@ -100,15 +100,15 @@
                     </li>
                     <li>
                         <p>Shipping</p>
-                        <p>Rs 6326</p>
+                        <p id="Shippingvalue">Rs 6326</p>
                     </li>
                     <li>
                         <p>Duties & taxes</p>
-                        <p>Rs 17507</p>
+                        <p id="taxvalue">Rs 17507</p>
                     </li>
                     <li>
                         <h2 id="Final">Total</h2>
-                        <h2><small>(INR)</small> 41139</h2>
+                        <h2><small>(INR)</small> <span id="finalPrice">41139</span></h2>
                     </li>
                 </ul>
                 <hr>
@@ -117,7 +117,7 @@
                 <h3 id="prcheck" class="blue"><span class="material-symbols-outlined">add</span> Promo Code</h3>
                 <div id="promocode">
                     <input type="text" name="promoCode" id="promoCode">
-                    <button>Apply</button>
+                    <button id="applyCode">Apply</button>
                 </div>
             </div>
             <br><hr>
