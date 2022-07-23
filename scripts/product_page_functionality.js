@@ -959,7 +959,9 @@ function showDetail(el)
    image.style.cursor='pointer'
    image.addEventListener('click',()=>
    {
+    localStorage.setItem('myShowProductPage',JSON.stringify(el))
     window.location.href='../flaky-touch-8976/showcase_page.html'
+
    })
    
    let desc= document.createElement('h3')
@@ -1028,17 +1030,17 @@ function showDetail(el)
    selectSize.add(option5);
 
    selectDiv.append(selectSize);
+   selectSize.addEventListener('click',()=>{
+    let size = selectSize.value;
+    addSize(el,size)
+})
 
 
    
    let color = document.createElement('p')
    color.innerText=`Color: ${el.color}`
 
-
-
-
-
-   
+  
    let bagbutton = document.createElement('button')
    bagbutton.innerText='Add to Bag'
    bagbutton.style.width='100%'
@@ -1057,8 +1059,8 @@ function showDetail(el)
 
    let addToWish = document.createElement("p")
    addToWish.innerText='+Add to Wish List'
-   addToWish.style.textDecoration='underline'
    addToWish.style.cursor='pointer'
+   addToWish.className='addTowish'
    addToWish.addEventListener('click',()=>
    {
     myAddToWishListFunction(el)
@@ -1088,6 +1090,12 @@ function showDetail(el)
 
 
 
+//  aad size to quick view
+let addSize = (el,size)=>{
+    el.size = size;
+}
+
+
 
 
 // ------------------------Cross Symbol
@@ -1110,7 +1118,8 @@ let bag = []
 function myAddToBag(el)
 {
     bag.push(el)
-    localStorage.setItem('myBag',JSON.stringify(bag))        // Key is ------- myBag
+    localStorage.setItem('myBag',JSON.stringify(bag))   
+    // alert('Add to Bag')     // Key is ------- myBag
 }
 
 

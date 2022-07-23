@@ -273,7 +273,12 @@ body {
     position: relative;
     padding: 10px;
     cursor: pointer;
-    opacity: 0.9;
+    /* opacity: 0.9; */
+}
+
+.quick-view:hover
+{
+    background-color: rgb(248, 247, 247);
 }
 
 
@@ -291,4 +296,14 @@ body {
     width: 100%;
     padding: 10px;
     outline: none;
+}
+
+
+
+
+/* Add To wishlist  */
+.addTowish:hover
+{
+    color: #393939;
+    text-decoration: underline;
 }
