@@ -211,3 +211,8 @@ document.querySelector('#sbsl>div:first-child').addEventListener('click', () => 
 document.querySelector('#sbsl>div:last-child').addEventListener('click', () => {
     window.location.href = 'saveLaterPage.html';
 })
+
+
+document.getElementById('continueShopping').addEventListener('click', () => {
+    window.location.href = 'product_page.html'
+})
