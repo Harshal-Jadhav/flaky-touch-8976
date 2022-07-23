@@ -278,3 +278,9 @@ h4 {
 .toggole_cartEmpty{
     display: none;
 }
+#emptyCart>button{
+margin-top: 12px;
+width: 40%;
+height: 50px;
+cursor: pointer;
+}
