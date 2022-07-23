@@ -29,10 +29,9 @@ width: 20%;
 box-sizing: border-box;
 padding:10px;
 }
-/* #w-b-text{
-    /* position: absolute; */
-    /* bottom: 0; */
-/* }  */
+#w-b-text{
+     margin-top: 50px;
+ }  
 #w-b-text>p>a{
     color: black;
 }
@@ -41,7 +40,13 @@ padding:10px;
     /* height: 300px; */
     width: 100%;
     text-align: center;
-    line-height: 35px;
+    line-height: 25px;
+}
+.textCon{
+    width: 100%;
+    height: 60%;
+    /* border: 1px solid black; */
+    position: relative;
 }
 .item>div{
     width: 100%;
@@ -53,7 +58,7 @@ padding:10px;
     width: 60%;
     height: 40%;
 }
-#bag-btn{
+.bag-btn{
     display: grid;
     grid-template-columns: 15% 85%;
     border: 1px solid black;
@@ -67,37 +72,50 @@ padding:10px;
     
 
 }
-/* #bag-btn>div{
-    /* width: 50%; */
-    /* border: 1px solid rgb(213, 34, 34); */
+.bag-btn{
+    cursor: pointer;
+    margin: auto;
+    position: absolute;
+    bottom: 15;
+    left: 25%;
+    right: 30%;
+    margin-bottom: 10px;
+    /* margin-top: 10px; */
     
-/* } */
-#bag-btn>div>img{
+   }
+.bag-btn>div>img{
     width: 100%;
 }
-#size{
-    width: 75%;
+.size{
+    width: 55%;
     display: flex;
     justify-content: space-between;
     margin: auto;
     /* text-align: center; */
     /* border: 1px solid black; */
 }
-#price{
-    width: 75%;
+
+.price{
+    width: 90%;
     display: flex;
     margin: auto;
     /* border: 1px solid black; */
     justify-content: space-between;
     margin-bottom: 20px;
 }
-#price>div:last-child>p{
+.price>p:last-child{
     text-decoration: line-through;
 }
-#delete-btn{
+.delete-btn{
     width: 50%;
     text-decoration: underline;
     /* border: 1px solid black; */
     margin: auto;
-    /* margin-top: 5px; */
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    right: 30%;
+    /* margin-bottom: 10px; */
+    margin-top: 25px;
 }
