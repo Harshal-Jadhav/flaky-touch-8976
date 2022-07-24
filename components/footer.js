@@ -66,10 +66,10 @@ let footer = ()=>{
                 <img src="https://cdn-icons-png.flaticon.com/512/1362/1362857.png"alt="logo 2"/>
             </div>
             <div class="d1">
-                <img src="https://cdn-icons.flaticon.com/png/512/665/premium/665228.png?token=exp=1658648888~hmac=004f80567532e2185f4f26bf4337d159"alt="logo 3"/>
+                <img src="https://cdn-icons.flaticon.com/png/512/665/premium/665213.png?token=exp=1658672919~hmac=d9bea1f9ffdf2ab14f66a0d0581f22d1"alt="logo 3"/>
             </div>
             <div class="d1">
-                <img src="https://cdn-icons.flaticon.com/png/512/665/premium/665209.png?token=exp=1658648934~hmac=67aef075f3f5aec3a727464012aa0797"alt="logo 4"/>
+                <img src="https://cdn-icons.flaticon.com/png/512/665/premium/665209.png?token=exp=1658672960~hmac=395bb3fbc2fff71da2d084a05e5d709d"alt="logo 4"/>
             </div>
             <div class="d1">
                 <img src="https://cdn-icons-png.flaticon.com/512/748/748113.png"alt="logo 5"/>
