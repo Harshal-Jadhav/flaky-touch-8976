@@ -66,7 +66,8 @@
            .child{
             font-family: Sans-Serif;
             color:#393939;
-            font-size:14px;
+            font-size:16px;
+            margin: 16px 0px;
            }
            #box{
             font-family: Sans-Serif;

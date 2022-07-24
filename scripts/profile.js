@@ -21,7 +21,7 @@ document.getElementById('cartPage').addEventListener('click', () => {
     window.location.href = 'cartPage.html'
 })
 document.getElementById('login').addEventListener('click', () => {
-    if (check == true) {
+    if (check == 'true') {
         window.location.href = "profile.html"
     } else {
         window.location.href = "signin.html"
