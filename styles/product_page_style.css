@@ -27,21 +27,25 @@ body {
 
 
 #quick-view-box {
-    height: 600px;
+    height: 500px;
     width: 600px;
     /* border: 5px solid black; */
-    margin: auto;
+    /* margin: auto; */
     /* position: absolute; */
-    margin: 50px 200px 0px 400px;
+    position: fixed;
+    top: 10%;
+    right: 30%;
+    /* margin: 0px 200px 0px 400px; */
     visibility: hidden;
     display: flex;
     background-color: white;
-    position: fixed;
+    
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     overflow: scroll;
     scroll-behavior: smooth;
     z-index: 99;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    /* line-height: 35px; */
 
 
 }
@@ -175,6 +179,7 @@ body {
 
 .right-bottom-section-upper-first-p {
     border-bottom: 3px solid black;
+    /* padding-bottom: 5px; */
 }
 
 .right-bottom-section-upper span {
@@ -185,6 +190,7 @@ body {
     /* border-bottom: 3px solid black; */
     height: 66%;
     cursor: pointer;
+    /* padding-bottom: 8px; */
 }
 
 .right-bottom-section-upper div p:hover {
@@ -229,13 +235,13 @@ body {
     overflow-x: hidden;
     margin-bottom: 20px;
     scroll-behavior: smooth;
-
 }
 
 
 
 #right-bottom-section-lower-container div {
-    line-height: 20px;
+    line-height: 30px;
+    font-size: 15px;
 }
 
 #right-bottom-section-lower-container div img {
