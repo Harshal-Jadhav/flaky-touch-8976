@@ -1,6 +1,6 @@
 let footer = ()=>{
     return `<div id="footer1">
-    <div id="box1">
+    <div id="box11">
      <div>
         <p class="heading">Customer Service</p>
         <p class="c2">Contact Us</p>
@@ -63,13 +63,13 @@ let footer = ()=>{
                 <img src="https://cdn-icons-png.flaticon.com/512/15/15874.png"alt="logo 1"/>
             </div>
             <div class="d1">
-                <img src="https://cdn-icons.flaticon.com/png/512/665/premium/665213.png?token=exp=1658640578~hmac=7d8dc52cdac808417a804f19f4fb8e20"alt="logo 2"/>
+                <img src="https://cdn-icons-png.flaticon.com/512/1362/1362857.png"alt="logo 2"/>
             </div>
             <div class="d1">
-                <img src="https://cdn-icons.flaticon.com/png/512/665/premium/665228.png?token=exp=1658640852~hmac=736e67e2929f7550c618ba177fb4aaf3"alt="logo 3"/>
+                <img src="https://cdn-icons.flaticon.com/png/512/665/premium/665228.png?token=exp=1658648888~hmac=004f80567532e2185f4f26bf4337d159"alt="logo 3"/>
             </div>
             <div class="d1">
-                <img src="https://cdn-icons.flaticon.com/png/512/665/premium/665209.png?token=exp=1658640808~hmac=524f70273c1f890da6fff629d708c6e2"alt="logo 4"/>
+                <img src="https://cdn-icons.flaticon.com/png/512/665/premium/665209.png?token=exp=1658648934~hmac=67aef075f3f5aec3a727464012aa0797"alt="logo 4"/>
             </div>
             <div class="d1">
                 <img src="https://cdn-icons-png.flaticon.com/512/748/748113.png"alt="logo 5"/>

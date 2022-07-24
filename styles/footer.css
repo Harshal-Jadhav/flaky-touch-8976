@@ -24,12 +24,12 @@
    
 
 }
-#box1{
+#box11{
     height:80%;
     width:70%;
-    /* border:1px solid blue; */
+    /* border:5px solid blue; */
     display:grid;
-    grid-template-columns:repeat(5,1fr);
+    grid-template-columns:repeat(5,195px);
     grid-template-rows:repeat(50px);
     line-height: 30px;
 }
@@ -38,10 +38,9 @@
     width:30%;
     /* border:1px solid green; */
 }
-#box1 > div{
+#box11 > div{
     /* border:1px solid teal; */
     margin-right: 20px;
-
 }
 #logo-part{
     margin:auto;

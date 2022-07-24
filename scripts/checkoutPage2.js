@@ -21,7 +21,7 @@ document.getElementById('cartPage').addEventListener('click', () => {
     window.location.href = 'cartPage.html'
 })
 document.getElementById('login').addEventListener('click', () => {
-    if (check == true) {
+    if (check == 'true') {
         window.location.href = "profile.html"
     } else {
         window.location.href = "signin.html"
@@ -150,7 +150,7 @@ let placeOrder = () => {
                     alert('Your Order has been shipped')
                 }, 5000);
                 setTimeout(() => {
-                    alert('Your Order has been Sucessfully Delivered!!  ThankYou for Shopping with us');
+                    alert('Your Order has been Successfully Delivered!!  ThankYou for Shopping with us');
                     // window.location.href="index.html"
 
                 }, 8000);
