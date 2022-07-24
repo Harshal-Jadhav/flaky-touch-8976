@@ -9,6 +9,11 @@
 }
 #signin>h2{
     font-weight: lighter;
+    margin-bottom: 40px;
+}
+#signin>p{
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 form{
     width: 90%;

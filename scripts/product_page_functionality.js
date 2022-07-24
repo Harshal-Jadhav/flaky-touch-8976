@@ -834,6 +834,38 @@ let products = [{
 ]
 
 
+// --------------------------------NavBar & Footer Section--------------------------------------
+
+// !ALL IMPORTS ARE LISTED HERE;
+import navbar from '../components/navbar.js';
+import footer from '../components/footer.js';
+document.getElementById('navbar').innerHTML = navbar();
+document.getElementById('footer').innerHTML = footer();
+
+let check = localStorage.getItem('login');
+if (check == 'true') {
+    let data = JSON.parse(localStorage.getItem('signupData'))
+    document.getElementById('login').innerText = `Hi ${data.fname}`
+} else {
+    document.getElementById('login').innerText = 'Login'
+}
+document.getElementById('logo').addEventListener('click', () => {
+    window.location.href = 'index.html'
+})
+document.getElementById('mensPage').addEventListener('click', () => {
+    window.location.href = 'product_page.html'
+})
+document.getElementById('cartPage').addEventListener('click', () => {
+    window.location.href = 'cartPage.html'
+})
+document.getElementById('login').addEventListener('click', () => {
+    if (check == true) {
+        window.location.href = "profile.html"
+    } else {
+        window.location.href = "signin.html"
+    }
+})
+
 // ---------------------------------Show data to container---------------------------------------
 
 
@@ -1114,7 +1146,7 @@ function myCloseFunction()
 
 // ------------------MyAdd Bag Function----------------
 
-let bag = []
+let bag = JSON.parse(localStorage.getItem('myBag'))||[]
 function myAddToBag(el)
 {
     bag.push(el)
@@ -1126,7 +1158,7 @@ function myAddToBag(el)
 
 // -----------------My Add to Wish List function---------------------
 
-let wishList = []
+let wishList = JSON.parse(localStorage.getItem('myWishList'))
 function myAddToWishListFunction(el)
 {
     wishList.push(el)

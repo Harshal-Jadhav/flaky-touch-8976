@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="./styles/cartPage.css">
     <title>Cart Page</title>
     <link rel="icon" href="//n.nordstrommedia.com/id/169f9507-47b3-44bc-9ad4-9244fe191523.png" sizes="16x16" />
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
 <body>
     <!-- TODO NAVBAR DIV TO BE ADDED HERE -->
-    <!-- <div id="navbar"></div> -->
-
+    <div id="navbar"></div>
+    <br>
     <!-- ?Cart Page Starts -->
 
     <div id="main">
@@ -68,62 +70,62 @@
                     <!-- !Div Where all cart items will append -->
                     <div id="appendingDiv"">
                         <ul id="cart">
-                            <li class="product">
-                                <br>
-                                <hr><br>
-                                <div class="pd1">
-                                    <div>
-                                        <img src="https://n.nordstrommedia.com/id/sr3/062bf780-4178-41f7-bdb5-f3891bdad90a.jpeg?h=365&w=240&dpr=2"
-                                            alt="">
-                                    </div>
-                                    <!--img div -->
-                                    <div id="pd1d2">
-                                        <!-- Rest div -->
-                                        <div id="productDetails">
+                        <li class="product">
+                            <br>
+                            <hr><br>
+                            <div class="pd1">
+                                <div>
+                                    <img src="https://n.nordstrommedia.com/id/sr3/062bf780-4178-41f7-bdb5-f3891bdad90a.jpeg?h=365&w=240&dpr=2"
+                                        alt="">
+                                </div>
+                                <!--img div -->
+                                <div id="pd1d2">
+                                    <!-- Rest div -->
+                                    <div id="productDetails">
+                                        <div>
+                                            <p>Zeela</p><br>
+                                            <p>Live-In Pocket Shorts</p>
+                                            <p>Color: Black</p>
+                                        </div>
+                                        <div>
+                                            <p class="block"><span class="material-symbols-outlined">block</span>
+                                                Not Available for PickUp</p>
                                             <div>
-                                                <p>Zeela</p><br>
-                                                <p>Live-In Pocket Shorts</p>
-                                                <p>Color: Black</p>
-                                            </div>
-                                            <div>
-                                                <p class="block"><span class="material-symbols-outlined">block</span>
-                                                    Not Available for PickUp</p>
-                                                <div>
-                                                    <div id="delivery">
-                                                        <input type="radio" name="deliv" id="deliv" checked>
-                                                        <p>Delivery</p>
-                                                    </div>
-                                                    <p>International orders usually arrive within 5-13
-                                                        business days.We'll give you delivery dates in
-                                                        checkout.</p>
+                                                <div id="delivery">
+                                                    <input type="radio" name="deliv" id="deliv" checked>
+                                                    <p>Delivery</p>
                                                 </div>
+                                                <p>International orders usually arrive within 5-13
+                                                    business days.We'll give you delivery dates in
+                                                    checkout.</p>
                                             </div>
-                                            <div>
-                                                <p>$110.70 <span>($36.90 each)</span></p>
-                                            </div>
                                         </div>
-                                        <div id="quantity">Qty
-                                            <select name="qty" id="qty">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                            </select>
+                                        <div>
+                                            <p>$110.70 <span>($36.90 each)</span></p>
                                         </div>
-                                        <div id="cardButtons">
-                                            <button class="remove">Remove</button>
-                                            <button class="saveForLater">Save for later</button>
-                                        </div>
+                                    </div>
+                                    <div id="quantity">Qty
+                                        <select name="qty" id="qty">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                    <div id="cardButtons">
+                                        <button class="remove">Remove</button>
+                                        <button class="saveForLater">Save for later</button>
                                     </div>
                                 </div>
+                            </div>
 
-                            </li>
+                        </li>
 
                         </ul>
                     </div>
@@ -260,6 +262,8 @@
     </div>
 
     <!-- ?Cart Page End -->
+
+    <div id="footer"></div>
 </body>
 
 </html>
