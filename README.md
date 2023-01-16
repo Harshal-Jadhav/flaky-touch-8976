@@ -5,14 +5,14 @@ Nordstrom, Inc. is an American luxury department store chain headquartered in Se
 1.HTML</br>
 2.JavaScript</br>
 3.CSS</br>
-<h1>Implemented Features :</h1>
+<h1>Implemented Features :-</h1>
 1.Used local storage as a database for cart items storage & user login.</br>
 2.Customized navbar and hyperlinking icons.</br>
 3.Implemented Form Validation for login, promo code & card details.</br>
 <h1>Here are some screen-shots from our website</h1>
 <h1>Home Page :-</h1>
 <img src="https://user-images.githubusercontent.com/101392875/212726302-1f41262d-4b3c-4919-99c7-a3a9c4467bca.png"/>
-<h1>Product Page :</h1>
+<h1>Product Page :-</h1>
 <img src="https://user-images.githubusercontent.com/101392875/212728210-3c940e70-30d8-434f-bb6d-3336e7637fde.png"/>
 <h1>Cart Page :-</h1>
 <img src="https://user-images.githubusercontent.com/101392875/212731729-b30ead41-b68f-4207-920b-8380d0a1abdf.png"/>
