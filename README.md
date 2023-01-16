@@ -20,9 +20,6 @@ Nordstrom, Inc. is an American luxury department store chain headquartered in Se
 <img src="https://user-images.githubusercontent.com/101392875/212732085-9c634096-17ef-4644-8b5d-82b632cfd6b5.png"/>
 <img src="https://user-images.githubusercontent.com/101392875/212732307-cc8e910f-e8f0-4b77-90f6-eadf7efa8eaf.png"/>
 
-
-<h1>Payment Page :-</h1>
-<img src="https://user-images.githubusercontent.com/101392875/212728705-45654a43-a087-499a-9595-2d10ddfcdf80.png"/>
 <h1>Deployment Link :- </h1>
 <a href="https://nordstorm-clone.netlify.app">https://nordstorm-clone.netlify.app</a>
 
