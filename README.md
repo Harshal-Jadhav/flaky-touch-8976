@@ -11,5 +11,5 @@ Nordstrom, Inc. is an American luxury department store chain headquartered in Se
 3.Implemented Form Validation for login, promo code & card details.</br>
 <h1>Here are some screen-shots from our website</h1>
 <h1>Home Page</h1>
-<img src="https://user-images.githubusercontent.com/101392875/212726302-1f41262d-4b3c-4919-99c7-a3a9c4467bca.png
-"alt="home page">
+<img src="https://user-images.githubusercontent.com/101392875/212726302-1f41262d-4b3c-4919-99c7-a3a9c4467bca.png"/>
+
